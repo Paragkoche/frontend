@@ -1,0 +1,28 @@
+.animion:after,
+.animion:before {
+  content: "";
+  width: 10px;
+  background-color: #fff;
+  opacity: 0.2;
+  outline: none;
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  left: -50%;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+  z-index: 0;
+  transition: 0.3s;
+}
+.animion:hover:before {
+  left: 40%;
+}
+.animion:hover::after {
+  left: 50%;
+}
+.animion {
+  transition: all linear 0.2s;
+}
