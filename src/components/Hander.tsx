@@ -2,7 +2,7 @@ import Logo from "./Logo";
 import classes from "./Hander.module.css";
 export default () => {
   return (
-    <nav className="flex px-36 py-6 justify-between items-center">
+    <nav className="flex px-36 py-6 justify-between items-center shadow-md">
       <div className="flex items-center gap-2">
         <Logo />
         <h1 className="font-bold text-xl">GBJ BUZZ</h1>
@@ -16,7 +16,7 @@ export default () => {
       </ul>
       <button
         className={
-          "p-3 flex items-center text-white font-bold bg-[#FFD01F] rounded-xl relative"
+          "p-3 overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-xl relative"
         }
       >
         <a className={`${classes.animion} flex gap-2`}>
