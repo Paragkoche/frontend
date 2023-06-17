@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Hander from "@/components/Hander";
 import Image from "next/image";
 import d from "@/assets/down-arrow.svg";
+import Homepage from "@/components/Slider/Homepage";
 export default function Home() {
   return (
     <>
@@ -52,7 +53,7 @@ export default function Home() {
                 "radial-gradient(98.72% 792.15% at 0% 0.1%, rgba(193, 193, 193, 0.357) 0%, rgba(234, 234, 234, 0.153) 100%)",
               backdropFilter: "blur(7px)",
             }}
-            className=" p-20 py-40 rounded-xl border border-[#A2A2A2] relative z-10 flex justify-between"
+            className=" p-20 py-40 rounded-xl border border-[#A2A2A2] relative z-10 flex justify-between items-center"
           >
             <div className="w-1/3">
               <h1 className="text-5xl font-bold mb-3">Services</h1>
@@ -62,7 +63,9 @@ export default function Home() {
                 i.e Xpan BUZZ , 7i BUZZ , Libex Buzz and Block X BUZZ{" "}
               </p>
             </div>
-            <div></div>
+            <div className="w-[65%] items-center">
+              <Homepage />
+            </div>
           </div>
         </section>
         <section></section>
