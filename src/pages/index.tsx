@@ -3,6 +3,15 @@ import Hander from "@/components/Hander";
 import Image from "next/image";
 import d from "@/assets/down-arrow.svg";
 import Homepage from "@/components/Slider/Homepage";
+import Blogslider from "@/components/Slider/blogslider";
+import BE from "@/assets/BLUE Roof.svg";
+import fm from "@/assets/svg my.svg";
+import prod from "@/assets/download-p.png";
+import { CountUp } from "use-count-up";
+import P from "@/assets/p.svg";
+import c from "@/assets/co.svg";
+import s from "@/assets/soon.svg";
+
 export default function Home() {
   return (
     <>
@@ -42,11 +51,11 @@ export default function Home() {
             <Image src={d} alt="s" />
           </div>
         </section>
-        <section className="py-4 relative">
+        <section className="py-4 relative mb-20">
           <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6">
             <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full "></div>
           </div>
-          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 top-52 left-1/2"></div>
+          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4"></div>
           <div
             style={{
               backgroundImage:
@@ -68,12 +77,166 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section className="py-4 relative mb-20">
+          <div className="absolute bg-[rgba(225,209,35,0.6)] filter w-[520px] h-[520px] blur-[250px] left-1/2 bottom-1/3 z-0"></div>
+          <h1 className="text-center text-5xl font-bold">
+            What We <span className="text-[#FFD01F]">Offer</span>
+          </h1>
+          <div className="flex relative z-10 flex-wrap mx-auto justify-center gap-20 mt-20">
+            <div className="w-1/3 ">
+              {[
+                {
+                  h: `Website Design
+                & Developement`,
+                  p: `we create a website from scratch. It involves designing the website layout, creating the website structure, and developing the website functionality. Website design and development is an important part of digital marketing as it helps businesses create an online presence and reach out to their target audience.`,
+                },
+                {
+                  h: "Data Analysis",
+                  p: `we your collect data and gain insights into user behavior, traffic sources, conversions, and other important metrics by advance tools. we Analyze metrics such as website traffic, page views, session duration, referral sources, conversion rates, and customer demographics. Identify trends, patterns, and areas of improvement.
+                  `,
+                },
+                {
+                  h: "Business Development",
+                  p: `Unlock holistic growth and success with Business Development by GBJ Buzz. Our strategic consulting, digital marketing, technology, HR consulting, and business networking services empower your business. Trust us to maximize your potential and achieve comprehensive growth. Let's unlock your full potential together.`,
+                },
+              ].map((v, i) => (
+                <div
+                  className="p-14 text-center bg-[#FFD01F] rounded-lg mb-10"
+                  style={{
+                    boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
+                  }}
+                >
+                  <h1 className="font-bold text-4xl my-3">{v.h}</h1>
+                  <p className="text-justify mt-5">{v.p}</p>
+                </div>
+              ))}
+            </div>
+            <div className="w-1/3 pt-10">
+              {[
+                {
+                  h: `Cyber Security `,
+                  p: `GBJ Buzz Cyber Security is your trusted partner in safeguarding your digital assets, offering comprehensive solutions to protect your business from cyber threats. With cutting-edge technologies and expertise, we ensure the security of your sensitive data and fortify your systems against unauthorized access, providing peace of mind in the digital landscape.`,
+                },
+                {
+                  h: "Product Management",
+                  p: `We Gain a deep understanding of the target market and customer needs by conducting market research, analyzing customer feedback, and staying updated with industry trends. Identify pain points, opportunities, and gaps that your digital marketing products or services can address.`,
+                },
+                {
+                  h: "360 Marketing ",
+                  p: `Experience the power of 360 Degree Marketing with GBJ Buzz. Our comprehensive approach combines online and traditional marketing channels to create a seamless customer journey. Maximize your brand presence and impact with our integrated strategies. Unlock your marketing potential with GBJ Buzz.`,
+                },
+              ].map((v, i) => (
+                <div
+                  className="p-14 text-center bg-[#FFD01F] rounded-lg mb-10"
+                  style={{
+                    boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
+                  }}
+                >
+                  <h1 className="font-bold text-4xl my-3">{v.h}</h1>
+                  <p className="text-justify mt-5">{v.p}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="py-4 relative mb-20 px-52">
+          <div className="border-[20px] border-[#FFD01F] w-36 h-36 rounded-full absolute right-48"></div>
+          <h1 className="text-center font-bold text-5xl mb-10 relative">
+            Happy <span className="text-[#FFD01F]">Clients</span> Say
+          </h1>
+          <div className="p-20 flex gap-3 bg-[rgba(255,208,31,0.2)] border-[3px] border-[rgba(255,208,31,0.58)] backdrop-blur-sm rounded-[43px]">
+            <div className="bg-white p-7 w-1/2 rounded-md relative">
+              <div className="absolute flex gap-10 items-center w-full -top-5">
+                <Image src={BE} alt="-" width={150} />
+                <h1 className="p-5 px-20 bg-[#FFD01F] bg-opacity-50 font-bold rounded-full">
+                  The Bliss Events
+                </h1>
+              </div>
+              <p className="mt-28 italic text-center">
+                "GBJ Buzz has been instrumental in the success of Bliss Events.
+                Highly recommended for exceptional event marketing!"
+              </p>
+              <i className="text-right ml-52 mt-9 italic">
+                - Vijay Sir (CEO & Founder)
+              </i>
+            </div>
+            <div className="bg-white p-7 w-1/2 rounded-md relative">
+              <div className="absolute flex gap-10 items-center w-full -top-5">
+                <Image src={fm} alt="-" width={150} />
+                <h1 className="p-5 px-24 bg-[#FFD01F] bg-opacity-50 font-bold rounded-full">
+                  MyFit Meals
+                </h1>
+              </div>
+              <p className="mt-28 italic text-center">
+                "We owe our business's success to GBJ Buzz. Their services have
+                propelled our growth, expanding our online presence and boosting
+                customer engagement. Highly recommended!"
+              </p>
+              <i className="text-right ml-52 mt-9 italic">
+                - Amar Sir (CEO & Founder)
+              </i>
+            </div>
+          </div>
+        </section>
+        <section className="py-[4rem] mt-20 relative mb-20 px-52 flex gap-10 justify-center">
+          <div className="bg-[#FFD01F] flex  relative justify-between gap-32 p-16 rounded-lg">
+            <Image
+              src={prod}
+              width={500}
+              alt="-"
+              className="absolute bottom-0 -left-16 "
+            />
+            <div className="text-5xl ml-[17rem] font-bold text-center">
+              Upcoming <br />
+              <p className="text-9xl">
+                <CountUp isCounting end={10} duration={5} />+
+              </p>
+              PRODUCT
+            </div>
+          </div>
+          <div className="p-5 flex flex-col items-center w-1/2 bg-[#D9D9D9] rounded-3xl">
+            <div>
+              <div className="flex gap-5 items-center my-4">
+                {[c, P, s, P].map((v, i) => (
+                  <div className="flex items-center justify-center rounded-full bg-[#F5F5F7] w-20 h-20">
+                    <Image width={50} src={v} alt="-" />
+                  </div>
+                ))}
+              </div>
+              <div className="flex gap-5 items-center my-4">
+                {[P, c, P, s].map((v, i) => (
+                  <div className="flex items-center justify-center rounded-full bg-[#F5F5F7] w-20 h-20">
+                    <Image width={50} src={v} alt="-" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <button className="py-4 px-9 bg-white rounded-2xl mt-10">
+              Know More
+            </button>
+          </div>
+        </section>
+        <section className="py-4 relative mb-20 px-52">
+          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4"></div>
+          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6">
+            <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full"></div>
+          </div>
+          <div className="p-20 flex gap-3 bg-[rgba(255,208,31,0.2)] border-[3px] border-[rgba(255,208,31,0.58)] backdrop-blur-sm rounded-[43px]">
+            <p className="text-5xl text-center font-bold">
+              “Actions speak louder than words. Our commitment to your success
+              is evident in every step we take”
+            </p>
+          </div>
+        </section>
+        <section className="py-4 relative mb-20 px-52">
+          <h1 className="text-5xl font-bold">Trending Blogs </h1>
+          <div className="my-10 h-full">
+            <Blogslider />
+          </div>
+        </section>
+        <section className="py-4 relative mb-20 px-52">
+          <div className="p-20 flex gap-3 bg-[rgba(255,208,31,0.2)] border-[3px] border-[rgba(255,208,31,0.58)] backdrop-blur-sm rounded-[43px]"></div>
+        </section>
       </main>
       <Footer />
     </>
