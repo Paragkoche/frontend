@@ -6,12 +6,16 @@ import DrDP from "@/assets/DrDP.svg";
 import Drpriv from "@/assets/drPravin.svg";
 import gj from "@/assets/gujan.svg";
 import Emp from "@/components/Slider/emp";
+import Homepage from "@/components/Slider/comp";
+import DS from "@/assets/aa.svg";
+import DS2 from "@/assets/aav.svg";
+import { CountUp } from "use-count-up";
 const About = () => {
   return (
     <>
       <Hander />
-      <main className="px-36">
-        <section className="py-4 my-[100px] relative mb-20 flex items-center ">
+      <main className="">
+        <section className="px-36 overflow-hidden py-4 my-[100px] relative mb-20 flex items-center ">
           <div className="flex flex-col">
             <h1 className="font-bold text-[100px] leading-[112px]">
               We Build Bridges <br />
@@ -70,7 +74,7 @@ const About = () => {
           </div>
           <div className="bg-[rgba(255,208,31,0.2)] w-[500px] h-[500px] blur-3xl border-[#FFD01F] absolute rounded-full -right-28"></div>
         </section>
-        <section className="py-4 my-[100px] relative mb-20">
+        <section className="px-36 overflow-hidden py-4 my-[100px] relative mb-20">
           <h1 className="text-center uppercase font-bold text-5xl mb-10">
             About Us
           </h1>
@@ -87,14 +91,14 @@ const About = () => {
             will have it soon.
           </p>
         </section>
-        <section className="py-4 my-[100px] relative mb-10 h-[80vh]  w-full">
-          <div className="bg-[rgba(255,208,31,0.8)] absolute p-10 px-28 rounded-3xl flex items-center flex-col -left-40">
+        <section className="px-36 overflow-hidden py-4 my-[100px] relative mb-10 h-[80vh]  w-full">
+          <div className="bg-[rgba(255,208,31,0.8)] absolute p-10 px-28 rounded-r-3xl flex items-center flex-col left-0">
             <Image src={DrDP} alt="=" />
 
             <h1 className="font-bold text-3xl my-4">Dr. D.P Kothari</h1>
             <p className="text-[#4E4C4C] text-3xl font-semibold">Mentor</p>
           </div>
-          <div className="bg-[rgba(0,0,0,0.8)] absolute p-10 px-28 rounded-l-3xl flex  items-center gap-6 -right-36 top-40">
+          <div className="bg-[rgba(0,0,0,0.8)] absolute p-10 px-28 rounded-l-3xl flex  items-center gap-6 right-0 top-40">
             <div className="flex flex-col items-center gap-2">
               <Image src={Drpriv} alt="-" />
               <h1 className="text-[#FFD01F] font-bold text-3xl">
@@ -111,9 +115,79 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="p-4 my-[100px] relative mb-20 h-[40vh]">
-          <div className=" bg-[rgba(117,117,117,0.8)] p-5 w-[75vw] absolute  -left-[9rem] rounded-r-3xl">
+        <section className="px-36 overflow-hidden p-4 my-[100px] relative mb-20 h-[40vh]">
+          <div className=" bg-[rgba(117,117,117,0.8)] p-5 w-[75vw] absolute  left-0 rounded-r-3xl">
             <Emp />
+          </div>
+        </section>
+        <section className="px-36 overflow-hidden py-4  relative mb-20">
+          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6">
+            <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full "></div>
+          </div>
+          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4"></div>
+
+          <div
+            className="w-full border-2 border-[#A1A1A1] rounded-2xl p-24 relative z-10 backdrop-blur-sm "
+            style={{
+              backgroundImage:
+                "radial-gradient(98.72% 792.15% at 0% 0.1%, rgba(193, 193, 193, 0.357) 0%, rgba(234, 234, 234, 0.153) 100%)",
+            }}
+          >
+            <Homepage />
+          </div>
+        </section>
+        <section className="px-36 overflow-hidden flex gap-10 justify-center">
+          <div>
+            <div className="p-5 py-6 text-center rounded-3xl bg-black text-[#FFD01F]">
+              <h1 className="text-9xl font-bold">
+                <CountUp isCounting end={96} duration={5} />+
+              </h1>
+              <p className="text-white font-semibold">Completed Projects</p>
+            </div>
+            <div className="p-5 my-6 py-6 text-center rounded-3xl bg-[#FFD01F] text-black">
+              <h1 className="text-9xl font-bold">
+                <CountUp isCounting end={111} duration={5} />+
+              </h1>
+              <p className="text-black font-semibold">Happy Clients</p>
+            </div>
+          </div>
+          <div className="pt-5">
+            <div className="p-5 py-6 text-center rounded-3xl bg-black text-[#FFD01F]">
+              <h1 className="text-9xl font-bold">
+                <CountUp isCounting end={15} duration={5} />+
+              </h1>
+              <p className="text-white font-semibold">On Going Projects</p>
+            </div>
+            <div className="p-5 my-6 py-6 text-center rounded-3xl bg-[rgba(0,0,0,0.8)] text-[#FFD01F]">
+              <h1 className="text-9xl font-bold">
+                <CountUp isCounting end={2} duration={5} />+
+              </h1>
+              <p className="text-white font-semibold">Offices Through India</p>
+            </div>
+          </div>
+        </section>
+        <section className="px-36 py-10 overflow-hidden h-[50vh]  relative  bg-[#F1F1F1]">
+          <Image src={DS} alt="=" className="absolute left-0 top-0" />
+          <Image src={DS2} alt="=" className="absolute right-0 top-0" />
+          <div className="relative z-10">
+            <h1 className="font-bold text-center text-5xl my-10">
+              Ready to get started?
+            </h1>
+            <p className="text-center text-[45px] text-[#425466]">
+              Supercharge Your Business with GBJ BUZZ's
+              <br /> Digital Marketing, AI, and Cybersecurity Services!
+            </p>
+            <div className="flex justify-center my-5">
+              <input
+                className="p-2 w-1/3 outline-none rounded-l-lg"
+                placeholder="Enter your email address"
+              />
+              <button className="px-40 py-5  overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-r-xl relative">
+                <a className={`${classes.animion} flex gap-2 text-black`}>
+                  Sing Up
+                </a>
+              </button>
+            </div>
           </div>
         </section>
       </main>
