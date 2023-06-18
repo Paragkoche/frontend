@@ -1,5 +1,6 @@
 import Logo from "./Logo";
 import classes from "./Hander.module.css";
+import Link from "next/link";
 export default () => {
   return (
     <nav className="flex px-36 py-6 justify-between items-center shadow-md">
@@ -10,7 +11,9 @@ export default () => {
       <ul className="flex gap-5 text-xl ">
         <li>Service</li>
         <li>Portfolio</li>
-        <li>About</li>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
         <li>Contact</li>
         <li>Blogs</li>
       </ul>

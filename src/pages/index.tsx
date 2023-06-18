@@ -66,7 +66,7 @@ export default function Home() {
           >
             <div className="w-1/3">
               <h1 className="text-5xl font-bold mb-3">Services</h1>
-              <p>
+              <p className="font-semibold mt-10">
                 The services provide by GBJ buzz helps to grow your business at
                 one Place with the wide verity of services categories in 4 type
                 i.e Xpan BUZZ , 7i BUZZ , Libex Buzz and Block X BUZZ{" "}
@@ -246,19 +246,21 @@ export default function Home() {
                 <div className="w-52 h-52 border-[#FFD01F] border-[20px] rounded-full flex justify-center items-center font-bold text-6xl">
                   <CountUp isCounting end={91} duration={5} />+
                 </div>
-                <h1 className="font-bold text-2xl">Clients</h1>
+                <h1 className="font-bold text-2xl mt-5">Clients</h1>
               </div>
               <div className="flex flex-col items-center mt-52">
                 <div className="w-52 h-52 border-[#FFD01F] border-[20px] rounded-full flex justify-center items-center font-bold text-6xl">
                   <CountUp isCounting end={96} duration={5} />%
                 </div>
-                <h1 className="font-bold text-2xl">Clients Retention </h1>
+                <h1 className="font-bold text-2xl mt-5">Clients Retention </h1>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-52 h-52 border-[#FFD01F] border-[20px] rounded-full flex justify-center items-center font-bold text-6xl">
                   <CountUp isCounting end={5} duration={5} />+{" "}
                 </div>
-                <h1 className="font-bold text-2xl">Years Of Experience </h1>
+                <h1 className="font-bold text-2xl mt-5">
+                  Years Of Experience 
+                </h1>
               </div>
             </div>
           </div>
