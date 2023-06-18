@@ -1,24 +1,24 @@
-<svg width="162" height="138" viewBox="0 0 162 138" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<mask id="mask0_1_134" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="12" y="0" width="138" height="138">
-<path d="M12.0703 0H149.57V137.5H12.0703V0Z" fill="white"/>
+<svg width="727" height="629" viewBox="0 0 727 629" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_1_134" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="54" y="0" width="620" height="629">
+<path d="M54.3232 0H673.151V629H54.3232V0Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_1_134)">
-<mask id="mask1_1_134" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="12" y="0" width="138" height="138">
-<path d="M80.8203 0C42.8516 0 12.0703 30.7812 12.0703 68.75C12.0703 106.719 42.8516 137.5 80.8203 137.5C118.789 137.5 149.57 106.719 149.57 68.75C149.57 30.7812 118.789 0 80.8203 0Z" fill="white"/>
+<mask id="mask1_1_134" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="54" y="0" width="620" height="629">
+<path d="M363.737 0C192.856 0 54.3232 140.81 54.3232 314.5C54.3232 488.19 192.856 629 363.737 629C534.618 629 673.151 488.19 673.151 314.5C673.151 140.81 534.618 0 363.737 0Z" fill="white"/>
 </mask>
 <g mask="url(#mask1_1_134)">
-<path d="M12.0703 0H149.57V137.5H12.0703V0Z" fill="#B40101"/>
+<path d="M54.3232 0H673.151V629H54.3232V0Z" fill="#B40101"/>
 </g>
 </g>
-<mask id="mask2_1_134" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="13" width="162" height="122">
-<path d="M0 13.9023H161.535V134.652H0V13.9023Z" fill="white"/>
+<mask id="mask2_1_134" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="63" width="727" height="553">
+<path d="M0 63.5969H727V615.973H0V63.5969Z" fill="white"/>
 </mask>
 <g mask="url(#mask2_1_134)">
-<mask id="mask3_1_134" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="6" width="163" height="137">
-<rect x="0.000976562" y="6.53162" width="162" height="135.75" fill="url(#pattern0)"/>
+<mask id="mask3_1_134" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="29" width="730" height="622">
+<rect x="0.0043335" y="29.8792" width="729.092" height="620.995" fill="url(#pattern0)"/>
 </mask>
 <g mask="url(#mask3_1_134)">
-<rect x="0.000976562" y="6.53162" width="162" height="135.75" fill="url(#pattern1)"/>
+<rect x="0.0043335" y="29.8792" width="729.092" height="620.995" fill="url(#pattern1)"/>
 </g>
 </g>
 <defs>

@@ -129,8 +129,7 @@ const About = () => {
           <div
             className="w-full border-2 border-[#A1A1A1] rounded-2xl p-24 relative z-10 backdrop-blur-sm "
             style={{
-              backgroundImage:
-                "radial-gradient(98.72% 792.15% at 0% 0.1%, rgba(193, 193, 193, 0.357) 0%, rgba(234, 234, 234, 0.153) 100%)",
+              boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
             }}
           >
             <Homepage />

@@ -26,3 +26,116 @@
 .animion {
   transition: all linear 0.2s;
 }
+
+.animion_:after,
+.animion_:before {
+  content: "";
+  width: 10px;
+  background-color: #d9d9d9;
+  opacity: 0.2;
+  outline: none;
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  left: -50%;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+  z-index: 0;
+  transition: 0.3s;
+}
+.animion_:hover:before {
+  left: 40%;
+}
+.animion_:hover::after {
+  left: 50%;
+}
+.animion_ {
+  transition: all linear 0.2s;
+}
+.animion_1:after,
+.animion_1:before {
+  content: "";
+  width: 50px;
+  background-color: #ffad33;
+  opacity: 0.5;
+  outline: none;
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  left: -50%;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+  z-index: 0;
+  transition: 0.8s;
+}
+.animion_1:hover:before {
+  left: 55%;
+}
+.animion_1:hover::after {
+  left: 70%;
+}
+.animion_1 {
+  transition: all linear 0.2s;
+}
+.animion_2:after,
+.animion_2:before {
+  content: "";
+  width: 50px;
+  background-color: #fff;
+  opacity: 0.2;
+  outline: none;
+  position: absolute;
+  top: -80px;
+  bottom: -80px;
+  left: -80%;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+  z-index: 0;
+  transition: 0.8s;
+}
+.animion_2:hover:before {
+  left: 55%;
+}
+.animion_2:hover::after {
+  left: 70%;
+}
+.animion_2 {
+  transition: all linear 0.2s;
+}
+.animion_3:after,
+.animion_3:before {
+  content: "";
+  width: 20px;
+  background-color: #ffad33;
+  opacity: 0.2;
+  outline: none;
+  position: absolute;
+  top: -80px;
+  bottom: -80px;
+  left: -80%;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+  z-index: 0;
+  transition: 0.8s;
+}
+.animion_3:hover:before {
+  left: 55%;
+}
+.animion_3:hover::after {
+  left: 70%;
+}
+.animion_3 {
+  transition: all linear 0.2s;
+}

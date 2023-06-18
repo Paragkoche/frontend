@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,9 +24,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
 .swiper-wrapper {
   align-items: center;
 }
 .swiper-pagination {
   bottom: 0px !important;
+}
+video::-webkit-media-controls {
+  display: none;
+}
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: none !important;
 }

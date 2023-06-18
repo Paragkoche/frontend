@@ -8,7 +8,7 @@ export default () => {
         <Logo />
         <h1 className="font-bold text-xl">GBJ BUZZ</h1>
       </div>
-      <ul className="flex gap-5 text-xl ">
+      <ul className="flex gap-12 text-xl ">
         <li>Service</li>
         <li>Portfolio</li>
         <li>
@@ -18,12 +18,15 @@ export default () => {
         <li>Blogs</li>
       </ul>
       <button
+        style={{
+          boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
+        }}
         className={
-          "p-3 overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-xl relative"
+          "p-3 overflow-hidden flex text-black items-center  font-bold bg-[#FFD01F] rounded-xl relative"
         }
       >
-        <a className={`${classes.animion} flex gap-2`}>
-          Request A Quote
+        <a className={`${classes.animion} flex items-center gap-2`}>
+          Request Quote
           <svg
             width="35"
             height="30"
@@ -55,6 +58,9 @@ export default () => {
                 id="image0_51_19929"
                 width="100"
                 height="100"
+                style={{
+                  filter: "invert(1)",
+                }}
                 xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+klEQVR4nO3dz0obURxH8bvoUqm40VJ8Cn0RoRvbVZVxoU/gwqfwLfQB7Ku0CF2460Lpzor2yGAUBI0JJLlf5p4PZBeYX+7JDPkzyZQiSZIkSZIkSVLTgBXgC7AHbNWep2nAV+AvL/0AVmvP1hygA/7zuvPa8zWF8TGebNaeswlMFqO3W3vWwWPyGL3t2vMOGtPFuAY+1p55sJguRn+/ndozDxaP7y/up4hxUHvmwcIYOYwRBPeMHBgjB8bIgTFyYIwcGCMHxsiBMXJgjBwYIwfGyIExcmCMHBgjB8bIgTFyYIwcGCMHxsiBMXJgjBwYY+ziLAMfgs8o7EoLgH3g9+iB3wBnwMact9kZ4/WFOX7jGXkJrBljgYDPwO2Yw8TJHLbZuWe8vTjf3jlu/zTGAgGH7wT5M8Ntde4ZIUHwpW1OEIyREwRj5ATBGDlBMEZOEIyRE8QYQUGMERTEGEFBjBEUxBhBQYwRFMQYQUGMERTEGEFBjBEUxBhBQYyRFeTOr12zgkzKf2ILCmKMoCDGCApijKAgxggL0v/t6tUMb7/601aB9dKyGb7KmpXLeZ91Hy0wSO+0tCo0yM0ifzQUZfSxSKKl0qL+mkvkuSgtG11zKcn30rL+AlghUf4BR7XXI+3wtTv6AeiibzvAp9prIEmSJEmSJElSefYAxjXAYCIzdLwAAAAASUVORK5CYII="
               />
             </defs>

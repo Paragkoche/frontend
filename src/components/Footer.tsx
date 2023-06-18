@@ -1,5 +1,5 @@
 import classes from "./Hander.module.css";
-import imag from "@/assets/download.jpeg";
+import imag from "@/assets/download.svg";
 import yt from "@/assets/youtube.svg";
 import tw from "@/assets/twitter.svg";
 import IN from "@/assets/instagram.svg";
@@ -17,47 +17,109 @@ export default () => {
         <div className="flex text-[#FFD01F] justify-between">
           <div className="flex flex-col gap-3">
             <h1 className="underline text-3xl ">Services</h1>
-            <ul className="flex flex-col gap-1">
-              <li>Performance Marketing</li>
-              <li>360 Marketing</li>
-              <li>Digital marketing </li>
-              <li>Mobile App Development</li>
-              <li>Web Development</li>
-              <li>Seo (search engine optimization)</li>
-              <li>Ai automation </li>
-              <li>ADV Camping </li>
+            <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F] ">
+              <li>
+                <i className="text-xl mr-3">-</i>
+                Performance Marketing
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>
+                360 Marketing
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>
+                Digital marketing{" "}
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>
+                Mobile App Development
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>
+                Web Development
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>
+                Seo (search engine optimization)
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>
+                Ai automation{" "}
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>
+                ADV Camping{" "}
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-3">
             <h1 className="underline text-3xl ">DIGITAL TRANSFORMATION </h1>
-            <ul className="flex flex-col gap-1">
-              <li>Saas Platforms</li>
-              <li>Paas Platforms</li>
-              <li>Al Development</li>
-              <li>ML Development</li>
-              <li>Digital Product Development</li>
-              <li>Cyber Security Services </li>
-              <li>Healthcare Portal Development</li>
-              <li>Progressive Web App</li>
+            <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F]">
+              <li>
+                {" "}
+                <i className="text-xl mr-3">-</i>Saas Platforms
+              </li>
+              <li>
+                {" "}
+                <i className="text-xl mr-3">-</i>Paas Platforms
+              </li>
+              <li>
+                {" "}
+                <i className="text-xl mr-3">-</i>Al Development
+              </li>
+              <li>
+                {" "}
+                <i className="text-xl mr-3">-</i>ML Development
+              </li>
+              <li>
+                {" "}
+                <i className="text-xl mr-3">-</i>Digital Product Development
+              </li>
+              <li>
+                {" "}
+                <i className="text-xl mr-3">-</i>Cyber Security Services{" "}
+              </li>
+              <li>
+                {" "}
+                <i className="text-xl mr-3">-</i>Healthcare Portal Development
+              </li>
+              <li>
+                {" "}
+                <i className="text-xl mr-3">-</i>Progressive Web App
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-3">
             <h1 className="underline text-3xl ">USEFUL LINKS </h1>
-            <ul className="flex flex-col gap-1">
-              <li>Contact US </li>
-              <li>About Us </li>
-              <li>Blogs </li>
-              <li>Testimonials </li>
-              <li>Assets </li>
-              <li>Services </li>
-              <li>Medium </li>
+            <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F]">
+              <li>
+                <i className="text-xl mr-3">-</i>Contact US{" "}
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>About Us{" "}
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>Blogs{" "}
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>Testimonials{" "}
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>Assets{" "}
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>Services{" "}
+              </li>
+              <li>
+                <i className="text-xl mr-3">-</i>Medium{" "}
+              </li>
             </ul>
           </div>
           <div className="flex flex-col items-center gap-3">
             <Image src={imag} alt="-" />
             <button
               className={
-                "py-5 px-10 overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-xl relative"
+                "py-5  overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-xl relative px-24"
               }
             >
               <a className={`${classes.animion} flex gap-2`}>Contact US</a>
@@ -68,8 +130,8 @@ export default () => {
           <div className="flex items-center gap-5">
             <Logo />
             <div>
-              <div className="bg-[#ffffff33] flex justify-center text-lg font-bold text-white relative overflow-hidden rounded-tl-md rounded-br-md py-3 px-4  mb-3">
-                <p className={classes.animion}>
+              <div className="bg-[#ffffff33] flex justify-center text-lg font-bold text-white relative overflow-hidden rounded-tl-md rounded-br-md py-2 px-2  mb-3">
+                <p className={`${classes.animion} text-lg`}>
                   {" "}
                   Subscribe For Trending
                   <span className={"text-[#FFD01F] p-5 "}>Newsletter</span>
@@ -82,8 +144,16 @@ export default () => {
                   name=""
                   placeholder="Email"
                   id=""
+                  style={{
+                    boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
+                  }}
                 />
-                <button className="relative  bg-[#FFD01F] overflow-hidden py-2 rounded-full px-3 ">
+                <button
+                  style={{
+                    boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
+                  }}
+                  className="relative  bg-[#FFD01F] overflow-hidden py-2 rounded-full px-3 "
+                >
                   <p className={classes.animion}>Subscribe</p>
                 </button>
               </div>
@@ -129,10 +199,12 @@ export default () => {
                     />
                   </svg>
                 </div>
-                <p className="text-[#ffD01F] font-bold">team@gbjbuzz.com</p>
+                <p className="text-[#ffD01F] font-bold text-2xl">
+                  team@gbjbuzz.com
+                </p>
               </div>
               <div className="flex items-center gap-3">
-                <div className="bg-[#ffD01F] p-1 rounded-full  flex items-center justify-center">
+                <div className="bg-[#ffD01F] p-1 rounded-full  flex items-center justify-center ">
                   <svg
                     width="29"
                     height="30"
@@ -146,7 +218,9 @@ export default () => {
                     />
                   </svg>
                 </div>
-                <p className="text-[#ffD01F] font-bold">+91 - 7020107390</p>
+                <p className="text-[#ffD01F] font-bold text-2xl">
+                  +91 - 7020107390
+                </p>
               </div>
             </div>
           </div>

@@ -7,15 +7,14 @@ const Homepage = () => {
     <Swiper
       effect={"coverflow"}
       grabCursor={true}
-      slidesPerView={2}
-      spaceBetween={30}
+      slidesPerView={3}
+      spaceBetween={20}
       centeredSlides={true}
       coverflowEffect={{
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
       }}
       pagination={false}
       autoplay={{
@@ -34,6 +33,11 @@ const Homepage = () => {
         {
           h: "Revamp Your Social Media Strategy with AI:",
           p: `As a business owner or marketer, you know that having 
+          a strong online presence is crucial in today’s digital age. And social media marketing can be a powerful tool to help you achieve that.......`,
+        },
+        {
+          h: "Revamp Your Social Media Strategy with AI:",
+          p: `As a business owner or marketer, you know that having 
             a strong online presence is crucial in today’s digital age. And social media marketing can be a powerful tool to help you achieve that.......`,
         },
         {
@@ -43,8 +47,8 @@ const Homepage = () => {
         },
       ].map((v, i) => (
         <SwiperSlide>
-          <div className="flex justify-center w-full ">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+          <div className="flex justify-center w-full my-10">
+            <div className="max-w-sm rounded-3xl overflow-hidden shadow-lg">
               <img
                 className="w-full"
                 src="https://v1.tailwindcss.com/img/card-top.jpg"
