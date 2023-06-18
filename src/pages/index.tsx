@@ -235,7 +235,33 @@ export default function Home() {
           </div>
         </section>
         <section className="py-4 relative mb-20 px-52">
-          <div className="p-20 flex gap-3 bg-[rgba(255,208,31,0.2)] border-[3px] border-[rgba(255,208,31,0.58)] backdrop-blur-sm rounded-[43px]"></div>
+          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4"></div>
+          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6">
+            <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full"></div>
+          </div>
+          <div className="p-20  gap-3 bg-[rgba(255,208,31,0.2)] border-[3px] border-[rgba(255,208,31,0.58)] backdrop-blur-sm rounded-[43px]">
+            <h1 className="text-center text-5xl font-bold">Happines</h1>
+            <div className="flex justify-between">
+              <div className="flex flex-col items-center">
+                <div className="w-52 h-52 border-[#FFD01F] border-[20px] rounded-full flex justify-center items-center font-bold text-6xl">
+                  <CountUp isCounting end={91} duration={5} />+
+                </div>
+                <h1 className="font-bold text-2xl">Clients</h1>
+              </div>
+              <div className="flex flex-col items-center mt-52">
+                <div className="w-52 h-52 border-[#FFD01F] border-[20px] rounded-full flex justify-center items-center font-bold text-6xl">
+                  <CountUp isCounting end={96} duration={5} />%
+                </div>
+                <h1 className="font-bold text-2xl">Clients Retention </h1>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-52 h-52 border-[#FFD01F] border-[20px] rounded-full flex justify-center items-center font-bold text-6xl">
+                  <CountUp isCounting end={5} duration={5} />+{" "}
+                </div>
+                <h1 className="font-bold text-2xl">Years Of Experience </h1>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />
