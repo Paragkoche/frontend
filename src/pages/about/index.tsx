@@ -5,6 +5,7 @@ import Image from "next/image";
 import DrDP from "@/assets/DrDP.svg";
 import Drpriv from "@/assets/drPravin.svg";
 import gj from "@/assets/gujan.svg";
+import Emp from "@/components/Slider/emp";
 const About = () => {
   return (
     <>
@@ -86,7 +87,7 @@ const About = () => {
             will have it soon.
           </p>
         </section>
-        <section className="py-4 my-[100px] relative mb-20 h-[100vh]  w-full">
+        <section className="py-4 my-[100px] relative mb-10 h-[80vh]  w-full">
           <div className="bg-[rgba(255,208,31,0.8)] absolute p-10 px-28 rounded-3xl flex items-center flex-col -left-40">
             <Image src={DrDP} alt="=" />
 
@@ -110,7 +111,11 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section></section>
+        <section className="p-4 my-[100px] relative mb-20 h-[40vh]">
+          <div className=" bg-[rgba(117,117,117,0.8)] p-5 w-[75vw] absolute  -left-[9rem] rounded-r-3xl">
+            <Emp />
+          </div>
+        </section>
       </main>
       <Footer />
     </>
