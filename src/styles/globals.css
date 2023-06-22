@@ -38,3 +38,30 @@ video::-webkit-media-controls {
 .swiper-3d .swiper-slide-shadow-left {
   background-image: none !important;
 }
+.animtion {
+  transition: all 2s ease;
+  animation: anim 1s infinite ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes anim {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.animtion-circ {
+  transition: all 2s ease;
+  animation: anim2 4s infinite ease;
+  animation-direction: alternate-reverse;
+}
+@keyframes anim2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

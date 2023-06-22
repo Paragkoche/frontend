@@ -15,68 +15,60 @@ import B from "@/assets/b.svg";
 import DS from "@/assets/aa.svg";
 import DS2 from "@/assets/aav.svg";
 import classes from "@/components/Hander.module.css";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import { Autoplay } from "swiper";
 import Cal from "@/assets/conta.svg";
 import Conta from "@/assets/cale.svg";
 import PPC from "@/assets/ppcont.svg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function Home() {
   return (
     <>
       <Hander />
-      <main className="">
-        <section className="px-36 py-16 relative mb-20">
+      <main className="overflow-x-hidden">
+        <section
+          className="
+          max-[1024px]:px-20 max-[768px]:px-12 max-sm:px-5 max-md:px-5
+        px-36 py-16 relative mb-20"
+        >
           <div
             style={{
               boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
             }}
-            className="border-[#FFD01F] border-[3px] overflow-hidden h-[45rem] rounded-[5rem] flex items-center justify-center gap-10"
+            className="
+            border-[#FFD01F]
+             border-[3px] 
+             overflow-hidden 
+             h-[45rem] 
+             rounded-[5rem]  
+             flex 
+             items-center 
+             justify-center 
+             gap-10
+             "
           >
-            <video autoPlay muted loop controls height={500} id="myVideo">
+            <video
+              autoPlay
+              muted
+              loop
+              controls
+              // height={500}
+              id="myVideo"
+            >
               <source src="vidoe.mp4" type="video/mp4" />
             </video>
-            {/* <svg
-              width="400"
-              height="378"
-              viewBox="0 0 400 378"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M247.555 7.94565C224.284 1.62773 199.927 -0.446019 175.735 1.90039C143.899 4.99448 113.34 15.6446 86.7588 32.9161C60.1908 50.2007 38.4031 73.5593 23.3669 100.946C8.33292 128.336 0.481577 158.89 0.525575 189.921C0.569572 220.95 8.51111 251.49 23.6353 278.836C38.7595 306.181 60.6066 329.482 87.2471 346.681C109.519 361.055 142.653 371.023 171.439 375.654C176.837 376.523 182.082 377.202 187.076 377.688V361.211V349.637C187.076 340.379 180.197 332.605 171.181 330.479C144.697 324.231 119.108 312.539 113.773 310.03C113.098 309.713 112.445 309.346 111.82 308.937C91.9131 295.872 75.5658 278.297 64.199 257.751C52.6518 236.869 46.5801 213.552 46.5515 189.864C46.5075 166.173 52.5022 142.843 63.99 121.932C75.4778 101.019 92.1001 83.1736 112.39 69.9902C132.679 56.7913 156.011 48.6614 180.322 46.2996C196.975 44.6877 213.732 45.8114 229.894 49.5828C242.242 52.4592 255.69 47.221 260.527 35.8364C265.367 24.4519 259.802 11.2706 247.555 7.94565Z"
-                fill="black"
-              />
-              <path
-                d="M238.878 118.398C243.513 114.044 251.111 117.328 251.111 123.685V187.196C251.111 188.168 250.324 188.956 249.351 188.956H172.144C169.155 188.956 167.707 185.301 169.883 183.253L238.878 118.398Z"
-                fill="black"
-              />
-              <path
-                d="M257.385 321.63L251.998 323.915V319.345V306.043V289.803V268.83V254.141V252.672V250.47V249.408V248.348V247.286V246.145V245.083V244.023V242.96V241.901V240.757V239.697V238.637V237.575V236.434V235.371V234.312V233.249V232.108V231.046V229.986V228.926V227.782V225.66V224.6V223.457V222.397V221.335V220.275V219.213V218.071V215.949V214.889V213.746V211.624V210.564V208.36V206.238V205.095V204.035V201.913V200.853V200.606V200.444V200.362L251.912 200.118V199.872L251.745 199.546L251.661 199.137L251.492 198.812L251.408 198.649L251.325 198.487V198.403L251.155 198.24L251.072 198.077L250.902 197.833L250.735 197.752L250.566 197.587L250.399 197.424L250.229 197.343H250.062L249.893 197.262L249.809 197.18H249.64H249.472H248.21H244.758H238.361H212.433H194.335H178.678H162.095H160.243H159.064H158.897H158.811L158.727 197.262H158.644L157.548 197.424L156.708 197.668L155.865 197.996L153.846 199.137L151.32 201.587L141.049 212.605L126.992 227.62L126.655 228.027L126.488 228.273L126.319 228.598L126.066 229.089L125.898 229.414V229.661V230.149V230.639V231.211L125.982 231.699L126.066 231.945L126.151 232.271L126.319 232.596L126.488 232.843L126.655 233.087L126.825 233.249L127.075 233.577L127.328 233.903L127.581 234.149L127.834 234.312L128.255 234.556L128.677 234.8L129.181 234.965L129.937 235.127H131.453H134.568H139.786H161.336H178.341H191.136H198.123H201.068V235.29V238.228V252.265V273.237V301.311V322.283V343.421V364.393V376.47V377.614H201.405H214.369L228.932 375.98L238.191 374.676L248.546 372.879L261.594 369.288L278.597 363.087L291.814 356.804L306.46 349.05L322.96 337.789L337.606 325.956L346.362 317.632L354.442 308.655L364.124 296.332L372.204 284.745L378.854 272.993L385.251 259.691L389.207 249.245L392.744 237.819L395.857 224.273L397.542 213.746L398.552 203.544L399.478 197.099H398.552H377.759H345.099H300.4H284.154L276.157 197.996L271.273 199.384L266.981 202.729L263.613 207.054L262.351 210.645L261.174 215.378L262.351 220.6L263.613 224.926L266.981 229.17L270.18 232.189L272.116 233.249L272.452 233.414L272.622 233.496L272.789 233.577L272.958 233.658L273.126 233.74L273.295 233.821L273.546 233.903L273.799 233.984L273.968 234.065L274.221 234.149L274.472 234.23L274.725 234.312L274.978 234.393L275.231 234.474L275.484 234.556L275.82 234.637L276.157 234.718L276.494 234.8L276.83 234.883L277.25 234.965L277.84 235.046L278.43 235.127L279.103 235.209L279.609 235.29H297.285H344.763H346.362H348.298H349.224V235.371V236.025L348.718 237.819L347.539 240.841L346.613 242.716L345.099 246.063L343.5 249.245L341.648 252.918L338.953 257.488L335.501 262.954L331.125 269.158L327.168 274.216L322.96 279.032L319.591 282.704L314.963 287.193L309.828 291.925L304.355 296.332L298.717 300.657L295.096 303.105L288.952 307.268L280.029 312.165L271.022 316.57L264.539 319.345L257.385 321.63Z"
-                fill="black"
-              />
-            </svg>
-
-            <h1 className="text-[120px] font-bold leading-[10rem]">
-              Grow <span className="font-normal"> your </span>
-              <br /> Business <span className="font-normal">
-                at{" "}
-              </span> <br /> Junction
-            </h1> */}
           </div>
           <div className="bg-black h-20 w-20 absolute bottom-5 left-1/2 rounded-full flex justify-center items-center p-3">
             <Image src={d} alt="s" />
           </div>
         </section>
-        <section className="px-36 py-4 relative mb-20">
-          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6">
+        <section className="px-36 py-4 relative mb-20 max-[1024px]:px-20 max-[768px]:px-12 max-sm:px-5 max-md:px-5">
+          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6 animtion">
             <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full "></div>
           </div>
-          <div className="border-[#FFD01F] w-[15rem] h-[15rem] border-8 rounded-full flex justify-center items-center absolute z-0 bottom-9 right-1/4">
+          <div className="border-[#FFD01F] w-[15rem] h-[15rem] border-8 rounded-full flex justify-center items-center absolute z-0 bottom-9 right-1/4 animtion">
             <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full "></div>
           </div>
-          <div className="border-[#FFD01F] w-[15rem] h-[15rem] border-8 rounded-full flex justify-center items-center absolute z-0 -bottom-[4.75rem] -left-[7.75rem]">
+          <div className="border-[#FFD01F] w-[15rem] h-[15rem] border-8 rounded-full flex justify-center items-center absolute z-0 -bottom-[4.75rem] -left-[7.75rem] animtion">
             <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full "></div>
           </div>
           {/* <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4"></div> */}
@@ -86,10 +78,38 @@ export default function Home() {
                 "radial-gradient(98.72% 792.15% at 0% 0.1%, rgba(193, 193, 193, 0.357) 0%, rgba(234, 234, 234, 0.153) 100%)",
               backdropFilter: "blur(7px)",
             }}
-            className=" p-20 py-40 rounded-[5rem] border border-[#A2A2A2] relative z-10 flex justify-between items-center"
+            className="
+            max-[1024px]:flex-col 
+            max-[1024px]:py-20 
+            max-[1024px]:p-10 
+            max-[768px]:py-10 
+            max-[768px]:p-10 
+            max-sm:px-5 
+            max-sm:p-5  
+            p-20 
+            gap-4
+            py-40 
+            rounded-[5rem] 
+            border 
+            border-[#A2A2A2] 
+            relative 
+            z-10 flex 
+            justify-between 
+            items-center"
           >
-            <div className="w-1/3">
-              <h1 className="text-[5rem] font-bold mb-3">Services</h1>
+            <div
+              className="
+            max-[1024px]:w-full
+            max-[1024px]:text-center
+            max-[768px]:w-full
+            max-[768px]:text-center
+            w-1/3
+            
+            "
+            >
+              <h1 className="text-[5rem] max-[1024px]:text-[4rem] max-[768px]:text-[3rem] font-bold mb-3">
+                Services
+              </h1>
               <p className="font-semibold mt-2">
                 The services provide by GBJ BUZZ helps to grow your
                 <br /> business at one place with the wide verity of services
@@ -98,13 +118,21 @@ export default function Home() {
                 <br /> Block X Buzz and Cyberx{" "}
               </p>
             </div>
-            <div className="w-[65%] items-center">
+            <div className="w-[65%] max-[1024px]:w-full  items-center">
               <Homepage />
             </div>
           </div>
         </section>
-        <section className="px-36 py-4 relative mb-20 overflow-hidden">
-          <div className="absolute -right-[1.75rem] flex flex-col w-[200px] h-[200px] gap-10">
+        <section
+          className="
+            max-[1024px]:py-20 
+            max-[1024px]:p-10 
+            max-[768px]:py-10 
+            max-[768px]:p-10 
+            max-sm:px-5 
+            max-sm:p-5  px-36 py-4 relative mb-20 overflow-hidden"
+        >
+          <div className="absolute -right-[1.75rem] flex flex-col w-[200px] h-[200px] gap-10 animtion-circ">
             <div className="flex justify-between ">
               <div className="border-8 w-20 h-20 rounded-full border-[#ffcf2381]"></div>
               <div className="border-8 w-20 h-20 rounded-full border-[#FFD123]"></div>
@@ -114,18 +142,18 @@ export default function Home() {
               <div className="border-8 w-20 h-20 rounded-full border-[#ffcf2381]"></div>
             </div>
           </div>
-          <div className="absolute bottom-40 -left-[1.75rem] flex flex-col w-[200px] h-[200px] gap-10">
+          <div className="absolute bottom-40 -left-[1.75rem] flex flex-col w-[200px] h-[200px] gap-10 animtion-circ">
             <div className="flex justify-between ">
               <div className="border-8 w-20 h-20 rounded-full border-[#ffcf2381]"></div>
               <div className="border-8 w-20 h-20 rounded-full border-[#FFD123]"></div>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
               <div className="border-8 w-20 h-20 rounded-full border-[#FFD123]"></div>
               <div className="border-8 w-20 h-20 rounded-full border-[#ffcf2381]"></div>
             </div>
           </div>
-          <div className="absolute bg-[rgba(225,209,35,0.6)] filter w-[520px] h-[520px] blur-[250px] left-1/2 bottom-1/3 z-0"></div>
-          <div className="absolute bg-[rgba(225,209,35,0.6)] filter w-[520px] h-[520px] blur-[250px] left-[12%] top-[23%] z-0"></div>
+          <div className="absolute bg-[rgba(225,209,35,0.6)] filter w-[520px] h-[520px] blur-[250px] left-1/2 bottom-1/3 z-0 animtion"></div>
+          <div className="absolute bg-[rgba(225,209,35,0.6)] filter w-[520px] h-[520px] blur-[250px] left-[12%] top-[23%] z-0 animtion"></div>
           <h1 className="text-center text-5xl font-bold">
             What We{" "}
             <span
@@ -137,8 +165,19 @@ export default function Home() {
               Offer
             </span>
           </h1>
-          <div className="flex relative z-10 flex-wrap mx-auto justify-center gap-20 mt-20">
-            <div className="w-1/3 ">
+          <div
+            className="
+           max-[1024px]:gap-5
+           max-[768px]:gap-0
+          flex relative z-10 flex-wrap mx-auto justify-center gap-20 mt-20"
+          >
+            <div
+              className="w-1/3
+            max-[1024px]:w-1/2
+            max-[768px]:w-full
+            
+            "
+            >
               {[
                 {
                   h: `Website Design
@@ -169,7 +208,14 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="w-1/3 pt-52">
+            <div
+              className="w-1/3 pt-52
+              max-[1024px]:pt-0
+              max-[768px]:pt-0
+              max-[1024px]:w-1/2
+             max-[768px]:w-full
+            "
+            >
               {[
                 {
                   h: `Cyber Security `,
@@ -203,7 +249,7 @@ export default function Home() {
           </div>
         </section>
         <section className=" py-4 relative mb-44 px-52">
-          <div className="border-[20px] border-[#FFD01F] w-36 h-36 rounded-full absolute right-48"></div>
+          <div className="border-[20px] border-[#FFD01F] w-36 h-36 rounded-full absolute right-48 animtion"></div>
           <h1 className="text-center font-bold text-5xl mb-10 relative">
             Happy{" "}
             <span
@@ -315,8 +361,8 @@ export default function Home() {
           </div>
         </section>
         <section className=" py-4 relative mb-20 px-52">
-          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4"></div>
-          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6">
+          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4 animtion"></div>
+          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6 animtion">
             <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full"></div>
           </div>
           <div className="p-20 flex gap-3 bg-[rgba(255,208,31,0.2)] border-[3px] border-[rgba(255,208,31,0.58)] backdrop-blur-sm rounded-[43px]">
@@ -333,11 +379,11 @@ export default function Home() {
           </div>
         </section>
         <section className="py-4 relative mb-20 px-52">
-          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4"></div>
-          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6">
+          <div className="bg-[#FFD01F] w-36 h-36  rounded-full  absolute z-0 bottom-9 right-1/4 animtion"></div>
+          <div className="border-[#FFD01F] w-36 h-36 border-8 rounded-full flex justify-center items-center absolute z-0 left-1/3 -top-6 animtion">
             <div className="border-[#FFD01F] w-[100px] h-[100px] border-8 rounded-full"></div>
           </div>
-          <Image className="absolute left-[6rem]" src={B} alt="-" />
+          <Image className="absolute left-[6rem] animtion" src={B} alt="-" />
           <div
             style={{
               boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
@@ -412,7 +458,7 @@ export default function Home() {
           </div>
         </section>
         <section className="px-36 py-10 overflow-hidden h-[50vh]  relative  bg-[#F1F1F1]">
-          <Image src={DS} alt="=" className="absolute left-0 top-0" />
+          <Image src={DS} alt="=" className="absolute left-0 top-0 animtion" />
           <Image src={DS2} alt="=" className="absolute right-0 top-0" />
           <div className="relative z-10">
             <h1 className="font-bold text-center text-5xl my-10">
