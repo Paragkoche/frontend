@@ -12,9 +12,20 @@ import Image from "next/image";
 import Logo from "./Logo";
 export default () => {
   return (
-    <footer className="px-36 py-20 bg-black w-full ">
-      <div className="flex flex-col flex-wrap gap-20 ">
-        <div className="flex text-[#FFD01F] justify-between">
+    <footer
+      className="
+    max-[1024px]:px-20 max-[768px]:px-12 max-sm:px-5 max-md:px-5
+    px-36 py-20 bg-black w-full "
+    >
+      <div className="flex flex-col flex-wrap gap-20 w-full">
+        <div
+          className="flex 
+        max-[1024px]:flex-col max-[768px]:flex-col max-sm:flex-col max-md:flex-col 
+        max-[1024px]:gap-20 max-[768px]:gap-20 max-sm:gap-20 max-md:gap-20 
+        text-[#FFD01F] justify-between
+        w-full
+        "
+        >
           <div className="flex flex-col gap-3">
             <h1 className="underline text-3xl ">Services</h1>
             <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F] ">
@@ -115,19 +126,30 @@ export default () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col items-center gap-3">
+          <div
+            className="
+             max-[1024px]:w-full max-[768px]:w-full max-sm:w-full max-md:w-full 
+             max-[1024px]:gap-3 max-[768px]:gap-3 max-sm:gap-3 max-md:gap-3 
+             
+          flex flex-col items-center gap-3"
+          >
             <Image src={imag} alt="-" />
             <button
               className={
-                "py-5  overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-xl relative px-24"
+                "py-5  overflow-hidden flex items-center justify-center text-white font-bold bg-[#FFD01F] rounded-xl relative px-24  max-[1024px]:w-full max-[768px]:w-full max-sm:w-full max-md:w-full "
               }
             >
-              <a className={`${classes.animion} flex gap-2`}>Contact US</a>
+              <a className={`${classes.animion}   `}>Contact US</a>
             </button>
           </div>
         </div>
-        <div className="flex justify-between flex-wrap">
-          <div className="flex items-center gap-5">
+        <div
+          className="
+          gap-4
+           w-full
+        flex justify-between flex-wrap"
+        >
+          <div className="flex flex-wrap  items-center gap-5">
             <Logo />
             <div>
               <div className="bg-[#ffffff33] flex justify-center text-lg font-bold text-white relative overflow-hidden rounded-tl-md rounded-br-md py-2 px-2  mb-3">
@@ -137,9 +159,9 @@ export default () => {
                   <span className={"text-[#FFD01F] p-5 "}>Newsletter</span>
                 </p>
               </div>
-              <div className="flex gap-3 items-center ">
+              <div className="flex gap-3 items-center flex-wrap">
                 <input
-                  className="outline-none h-12 w-96 rounded-full p-2"
+                  className="outline-none h-12 w-full rounded-full p-2"
                   type="email"
                   name=""
                   placeholder="Email"
