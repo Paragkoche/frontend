@@ -69,6 +69,7 @@ const Homepage = () => {
             className="
            max-[1024px]:h-[12rem] 
            max-[768px]:h-[10rem]  
+           
           max-sm:py-5
           max-sm:px-5
           flex justify-center flex-col h-[17rem]  bg-[#E8E8E8] px-10 py-5 rounded-[2.5rem]"
@@ -78,8 +79,8 @@ const Homepage = () => {
               <Image
                 src={v.i}
                 alt=""
-                width={800}
-                className="max-sm:w-[50px] max-[768px]:w-[100px] w-[400px]"
+                width={700}
+                className="max-w-[3rem] max-sm:w-[50px] max-[768px]:w-[100px] w-[400px]"
               />
             </header>
             <p className="text-justify max-sm:hidden  max-[768px]:hidden ">
