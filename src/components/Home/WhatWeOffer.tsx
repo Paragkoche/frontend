@@ -1,3 +1,6 @@
+import Image from "next/image";
+import SVG from "@/assets/young men at work.svg";
+import Computer from "@/assets/computer.svg";
 const WhatWeOffer = () => {
   return (
     <section
@@ -8,30 +11,8 @@ const WhatWeOffer = () => {
           max-[768px]:py-10 
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5  px-36 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5  px-96 py-4 relative mb-20 overflow-hidden"
     >
-      <div className="absolute -right-[1.75rem] flex flex-col w-[200px] h-[200px] gap-10 animtion-circ">
-        <div className="flex justify-between ">
-          <div className="border-8 w-20 h-20 rounded-full border-[#ffcf2381]"></div>
-          <div className="border-8 w-20 h-20 rounded-full border-[#FFD123]"></div>
-        </div>
-        <div className="flex justify-between">
-          <div className="border-8 w-20 h-20 rounded-full border-[#FFD123]"></div>
-          <div className="border-8 w-20 h-20 rounded-full border-[#ffcf2381]"></div>
-        </div>
-      </div>
-      <div className="absolute bottom-40 -left-[1.75rem] flex flex-col w-[200px] h-[200px] gap-10 animtion-circ">
-        <div className="flex justify-between ">
-          <div className="border-8 w-20 h-20 rounded-full border-[#ffcf2381]"></div>
-          <div className="border-8 w-20 h-20 rounded-full border-[#FFD123]"></div>
-        </div>
-        <div className="flex justify-between ">
-          <div className="border-8 w-20 h-20 rounded-full border-[#FFD123]"></div>
-          <div className="border-8 w-20 h-20 rounded-full border-[#ffcf2381]"></div>
-        </div>
-      </div>
-      <div className="absolute bg-[rgba(225,209,35,0.6)] filter w-[520px] h-[520px] blur-[250px] left-1/2 bottom-1/3 z-0 animtion"></div>
-      <div className="absolute bg-[rgba(225,209,35,0.6)] filter w-[520px] h-[520px] blur-[250px] left-[12%] top-[23%] z-0 animtion"></div>
       <h1 className="text-center text-5xl font-bold">
         What We{" "}
         <span
@@ -43,7 +24,110 @@ const WhatWeOffer = () => {
           Offer
         </span>
       </h1>
-      <div
+      <p className="text-center text-5xl my-3 font-bold text-[rgba(0,0,0,0.6)]">
+        The Complete Solution
+        <br /> for Your Business
+        <br /> Growth
+      </p>
+      <div className=" my-20">
+        <div className="w-1/2 flex flex-col gap-4">
+          <h1 className="text-[#001F51] text-4xl font-bold">
+            Accelerate Your Business Growth at Junction
+          </h1>
+          <p className="text-[#5C5C5C]">
+            Supercharge your business growth at Junction. Our proven strategies
+            and expertise propel your success in the competitive market.
+          </p>
+        </div>
+        <div className="flex w-full items-center justify-between">
+          <ul className="w-1/2">
+            <li className="li">
+              <div>
+                <h1 className="text-lg font-bold mb-2">Web Development </h1>
+                <p className="text-[#5C5C5C]">
+                  we specialize in providing top-notch web development services.
+                  Our team of experts is dedicated to creating powerful and
+                  visually stunning websites that enhance your online presence
+                </p>
+              </div>
+            </li>
+            <li className="li">
+              <h1 className="text-lg font-bold mb-2">Cyber Security </h1>
+              <p className="text-[#5C5C5C]">
+                Committed to protecting your business with robust cyber
+                security. Rest easy knowing your valuable data and assets are
+                secure.
+              </p>
+            </li>
+            <li className="li">
+              <h1 className="text-lg font-bold mb-2">Data Analysis</h1>
+              <p className="text-[#5C5C5C]">
+                Actionable insights through advanced data analysis. Uncover
+                trends, customer behavior, and growth opportunities to optimize
+                strategies and maximize profitability. Empower your business
+                with data.
+              </p>
+            </li>
+          </ul>
+          <div className="w-1/2 flex items-center justify-center relative">
+            <Image src={SVG} alt="-" />
+            <div className="p-5 bg-white rounded-full absolute top-10">
+              <Image src={Computer} alt="=" />
+            </div>
+            <div className="p-5 bg-white rounded-full absolute left-10">
+              <Image src={Computer} alt="=" />
+            </div>
+            <div className="p-5 bg-white rounded-full absolute bottom-10">
+              <Image src={Computer} alt="=" />
+            </div>
+          </div>
+        </div>
+        <div className="flex w-full items-center justify-between">
+          <div className="w-1/2 flex items-center justify-center relative">
+            <Image src={SVG} alt="-" />
+            <div className="p-5 bg-white rounded-full absolute circle ">
+              <Image src={Computer} alt="=" />
+            </div>
+            <div className="p-5 bg-white rounded-full absolute circle2 ">
+              <Image src={Computer} alt="=" />
+            </div>
+            <div className="p-5 bg-white rounded-full absolute circle3">
+              <Image src={Computer} alt="=" />
+            </div>
+          </div>
+          <ul className="w-1/2">
+            <li className="li">
+              <div>
+                <h1 className="text-lg font-bold mb-2">Business Development</h1>
+                <p className="text-[#5C5C5C]">
+                  Ignite your business growth with our comprehensive development
+                  services. We leverage proven strategies and expertise to drive
+                  your success in today's dynamic market.
+                </p>
+              </div>
+            </li>
+            <li className="li">
+              <h1 className="text-lg font-bold mb-2">Product Management</h1>
+              <p className="text-[#5C5C5C]">
+                Optimize your product success with our expert product management
+                services. From ideation to launch, we ensure efficient planning,
+                development, and market positioning for maximum impact.
+              </p>
+            </li>
+            <li className="li">
+              <h1 className="text-lg font-bold mb-2">360 Marketing </h1>
+              <p className="text-[#5C5C5C]">
+                Amplify your brand reach and engagement with our comprehensive
+                360 marketing services. From strategic planning to execution, we
+                cover all aspects to deliver impactful and integrated marketing
+                campaigns.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* <div
         className="
          max-[1024px]:gap-5
          max-[768px]:gap-0
@@ -123,8 +207,8 @@ const WhatWeOffer = () => {
               <p className="text-justify mt-5">{v.p}</p>
             </div>
           ))}
-        </div>
-      </div>
+        </div> *
+      </div> */}
     </section>
   );
 };

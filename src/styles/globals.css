@@ -65,3 +65,80 @@ video::-webkit-media-controls {
     transform: rotate(-360deg);
   }
 }
+.li {
+  padding: 20px 0;
+  padding-left: 48px;
+  margin: 0;
+  position: relative;
+}
+.li::before {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  top: 26px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #ffd01f;
+  content: "";
+  visibility: visible;
+  z-index: 2;
+}
+.li::after {
+  position: absolute;
+  left: 9px;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  background-color: #a4a4a4;
+  content: "";
+  visibility: visible;
+  z-index: 1;
+}
+.li:first-child:after {
+  height: calc(100% - 30px);
+  top: 30px;
+}
+.li:last-child:after {
+  height: 30px;
+  top: 0px;
+}
+
+.circle {
+  animation: myOrbit06 9s linear infinite;
+}
+@keyframes myOrbit06 {
+  from {
+    transform: rotate(0deg) translateX(20px) translateY(155px) rotate(360deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(20px) translateY(155px) rotate(0deg);
+  }
+}
+.circle1 {
+  animation: myOrbit07 9s linear infinite;
+}
+@keyframes myOrbit07 {
+  from {
+    transform: rotate(0deg) translateX(20px) translateY(-155px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(20px) translateY(-155px)
+      rotate(-360deg);
+  }
+}
+.circle2 {
+  animation: myOrbit07 9s linear infinite;
+}
+@keyframes myOrbit08 {
+  from {
+    transform: rotate(0deg) translateX(20px) translateY(218px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(20px) translateY(218px) rotate(-360deg);
+  }
+}
+.circle3 {
+  animation: myOrbit08 9s linear infinite;
+}
