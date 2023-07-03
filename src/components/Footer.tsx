@@ -10,7 +10,10 @@ import fb from "@/assets/facebook.svg";
 import Image from "next/image";
 
 import Logo from "./Logo";
+import { useState } from "react";
+import axios from "axios";
 export default () => {
+  const [email, setEmail] = useState("");
   return (
     <footer
       className="
@@ -164,6 +167,8 @@ export default () => {
                   className="outline-none h-12 w-full rounded-full p-2"
                   type="email"
                   name=""
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
                   id=""
                   style={{
@@ -171,6 +176,11 @@ export default () => {
                   }}
                 />
                 <button
+                  onClick={() => {
+                    axios.post("/api/smtp", { email }).then((e) => {
+                      console.log(e);
+                    });
+                  }}
                   style={{
                     boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
                   }}
@@ -183,25 +193,37 @@ export default () => {
           </div>
           <div className="flex flex-wrap gap-4">
             <div className="bg-[#ffD01F] p-1 rounded-full h-14 flex items-center justify-center">
-              <Image src={fb} alt="-" />
+              <a href="https://www.facebook.com/profile.php?id=100068925834637&mibextid=ZbWKwL">
+                <Image src={fb} alt="-" />
+              </a>
             </div>
             <div className="bg-[#ffD01F] p-1 rounded-full h-14 flex items-center justify-center">
-              <Image src={IN} alt="-" />
+              <a href="https://www.instagram.com/gbjbuzz/">
+                <Image src={IN} alt="-" />
+              </a>
             </div>
             <div className="bg-[#ffD01F] p-1 rounded-full h-14 flex items-center justify-center">
-              <Image src={ld} alt="-" />
+              <a href="https://www.linkedin.com/company/gbj-buzz/">
+                <Image src={ld} alt="-" />
+              </a>
             </div>
             <div className="bg-[#ffD01F] p-1 rounded-full h-14 flex items-center justify-center">
-              <Image src={yt} alt="-" />
+              <a href="https://www.youtube.com/@gbjbuzz">
+                <Image src={yt} alt="-" />
+              </a>
             </div>
             <div className="bg-[#ffD01F] p-1 rounded-full h-14 flex items-center justify-center">
               <Image src={tw} alt="-" />
             </div>
             <div className="bg-[#ffD01F] p-1 rounded-full h-14 flex items-center justify-center">
-              <Image src={pin} alt="-" />
+              <a href="https://pin.it/3zURCtH">
+                <Image src={pin} alt="-" />
+              </a>
             </div>
             <div className="bg-[#ffD01F] p-1 rounded-full h-14 flex items-center justify-center">
-              <Image src={MD} alt="-" />
+              <a href="https://medium.com/@mr.gbjbuzz">
+                <Image src={MD} alt="-" />
+              </a>
             </div>
           </div>
           <div className="">
