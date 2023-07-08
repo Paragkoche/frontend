@@ -11,6 +11,10 @@ import amico from "@/assets/amico.png";
 import Service5 from "@/assets/servies5.png";
 import chip from "@/assets/Chip.png";
 import tool from "@/assets/Tools.png";
+import DS from "@/assets/aa.svg";
+import DS2 from "@/assets/aav.svg";
+import Exclusuve from "@/assets/Exclusive.png";
+
 const Services = () => {
   return (
     <>
@@ -304,10 +308,51 @@ const Services = () => {
                 </p>
               </div>
             </div>
+            <div className="bg-[rgba(255,208,31,0.2)] w-[500px] h-[500px] blur-3xl border-[#FFD01F] absolute rounded-full -right-28 -bottom-5"></div>
           </div>
         </section>
         {/* six section end  */}
-        <hr className="my-10 bg-gray-300 h-1" />
+
+        {/* seven section start  */}
+        <section className="overflow-hidden  my-[30px] relative">
+          <hr className=" bg-gray-300 my-11 h-1" />
+          <div className="flex items-center ">
+            <Image className="mx-auto" src={Exclusuve} alt="-" />
+          </div>
+          <h1 className="font-bold text-center  text-[rgb(0,0,0)] text-[60px]">
+            Skyrocket Your Business Success: Unleash <br /> the Power of GBJ
+            Premium Support with
+          </h1>
+          <div className="bg-[rgba(255,208,31,0.2)] w-[500px] h-[500px] blur-3xl border-[#FFD01F] absolute rounded-full -right-28 -bottom-5"></div>
+          <hr className=" bg-gray-300 my-10 h-1" />
+        </section>
+        {/* seven section end  */}
+        {/* eight section start */}
+        <section className="px-36 py-10 overflow-hidden lg:h-[90vh]  relative  bg-[#F1F1F1]">
+          <Image src={DS} alt="=" className="absolute left-0 top-0" />
+          <Image src={DS2} alt="=" className="absolute right-0 top-0" />
+          <div className="relative z-10">
+            <h1 className="font-bold text-center text-5xl my-10">
+              Ready to get started?
+            </h1>
+            <p className="text-center text-[45px] text-[#425466]">
+              Supercharge Your Business with GBJ BUZZ's
+              <br /> Digital Marketing, AI, and Cybersecurity Services!
+            </p>
+            <div className="flex justify-center my-5">
+              <input
+                className="p-2 w-1/3 outline-none rounded-l-lg"
+                placeholder="Enter your email address"
+              />
+              <button className="px-40 py-5  overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-r-xl relative">
+                <a className={`${classes.animion} flex gap-2 text-black`}>
+                  Sing Up
+                </a>
+              </button>
+            </div>
+          </div>
+        </section>
+        {/* eight section end */}
       </main>
       <Footer />
     </>
