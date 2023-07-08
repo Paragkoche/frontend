@@ -14,6 +14,7 @@ import card3 from "@/assets/card3.png";
 import card4 from "@/assets/card4.png";
 import card5 from "@/assets/card5.png";
 import card6 from "@/assets/card6.png";
+import Hero2 from "@/assets/hero2.png";
 function Cyber() {
   return (
     <div>
@@ -206,10 +207,10 @@ function Cyber() {
                   <Image className="mx-auto h-28 w-28" src={card1} alt="-" />
                 </div>
                 <div className="text-center ">
-                  <h2 className="text-[18px] font-bold">
-                    Manage Endpoint Security
-                  </h2>
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
+                    <p className="text-[18px] text-black font-bold">
+                      Manage Endpoint Security
+                    </p>
                     Protect devices from <br /> emerging cyber threats with{" "}
                     <br /> our comprehensive endpoint
                     <br /> security management <br /> proactive protection.
@@ -221,10 +222,10 @@ function Cyber() {
                   <Image className="mx-auto h-28 w-28" src={card2} alt="-" />
                 </div>
                 <div className="text-center ">
-                  <h2 className="text-[18px] font-bold">
-                    IT Audit & Compliance
-                  </h2>
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
+                    <p className="text-[18px] text-black font-bold">
+                      IT Audit & Compliance
+                    </p>
                     Achieve regulatory <br /> compliance and minimize <br /> our
                     risks through IT audits and <br /> expert guidance for{" "}
                     <br /> enhanced security.
@@ -236,11 +237,13 @@ function Cyber() {
                   <Image className="mx-auto h-28 w-28" src={card3} alt="-" />
                 </div>
                 <div className="text-center ">
-                  <h2 className="text-[25px] font-bold">Detecting Incident</h2>
-                  <p className="text-[20px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    Instantly respond to <br /> security incidents with <br />{" "}
-                    our advanced detection <br /> service, ensuring <br />{" "}
-                    proactive protection.
+                  <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
+                    <p className="text-[18px] text-black font-bold">
+                      Manage Endpoint Security
+                    </p>
+                    Take control of endpoint <br /> security with our
+                    streamlined <br /> management solutions, <br /> ensuring
+                    proactive protection <br /> against cyber threats.
                   </p>
                 </div>
               </div>
@@ -249,11 +252,13 @@ function Cyber() {
                   <Image className="mx-auto h-28 w-28" src={card4} alt="-" />
                 </div>
                 <div className="text-center ">
-                  <h2 className="text-[25px] font-bold">Detecting Incident</h2>
-                  <p className="text-[20px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    Instantly respond to <br /> security incidents with <br />{" "}
-                    our advanced detection <br /> service, ensuring <br />{" "}
-                    proactive protection.
+                  <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
+                    <p className="text-[18px] text-black font-bold">
+                      Infrastructure Security
+                    </p>
+                    Fortify your infrastructure <br /> with robust security,{" "}
+                    <br /> defending against threats <br /> and safeguarding
+                    system <br /> integrity.
                   </p>
                 </div>
               </div>
@@ -262,11 +267,13 @@ function Cyber() {
                   <Image className="mx-auto h-28 w-28" src={card5} alt="-" />
                 </div>
                 <div className="text-center ">
-                  <h2 className="text-[25px] font-bold">Detecting Incident</h2>
-                  <p className="text-[20px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    Instantly respond to <br /> security incidents with <br />{" "}
-                    our advanced detection <br /> service, ensuring <br />{" "}
-                    proactive protection.
+                  <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
+                    <p className="text-[18px] text-black font-bold">
+                      Applications Security
+                    </p>
+                    Secure applications with <br /> comprehensive solutions,{" "}
+                    <br /> ensuring integrity and <br /> protection of software{" "}
+                    <br /> assets.
                   </p>
                 </div>
               </div>
@@ -275,11 +282,12 @@ function Cyber() {
                   <Image className="mx-auto h-28 w-28" src={card6} alt="-" />
                 </div>
                 <div className="text-center ">
-                  <h2 className="text-[25px] font-bold">Detecting Incident</h2>
-                  <p className="text-[20px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    Instantly respond to <br /> security incidents with <br />{" "}
-                    our advanced detection <br /> service, ensuring <br />{" "}
-                    proactive protection.
+                  <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
+                    <p className="text-[18px] text-black font-bold">
+                      cloud security
+                    </p>
+                    Safeguard cloud <br /> infrastructure with <br /> advanced
+                    security <br /> measures for safety and <br /> resilience
                   </p>
                 </div>
               </div>
@@ -287,7 +295,29 @@ function Cyber() {
             <div className="bg-[rgba(255,208,31,0.2)] w-[500px] h-[500px] blur-3xl border-[#FFD01F] absolute rounded-full -right-[10px] -bottom-36"></div>
           </div>
         </section>
-        {/* second section end  */}
+        {/* five section end  */}
+        <section className="py-36">
+          <hr className=" bg-gray-300 h-1" />
+          <div className="flex px-8 py-16">
+            <div className="w-1/2">
+              <Image src={Hero2} alt="-" />
+            </div>
+            <div className="w-1/2 mt-11">
+              <h1 className="text-[50px] font-bold">
+                We <span className="text-[#FFD01F]">Strive</span> to Provide{" "}
+                <span className="text-[#FFD01F]">Excellent</span> Services
+              </h1>
+              <p className="text-[20px]">
+                Our relentless pursuit of excellence fuels our dedication <br />{" "}
+                to delivering outstanding services that surpass <br />{" "}
+                expectations and ensure unparalleled satisfaction for <br /> our
+                valued clients.
+              </p>
+              <hr className=" bg-[#FFE789] h-2 w-64 rounded my-[30px]" />
+            </div>
+          </div>
+          <hr className=" bg-gray-300 h-1" />
+        </section>
         {/* eight section start */}
         <section className="px-36 py-10 overflow-hidden lg:h-[90vh]  relative  bg-[#F1F1F1]">
           <Image src={DS} alt="=" className="absolute left-0 top-0" />
