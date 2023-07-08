@@ -15,6 +15,7 @@ import card4 from "@/assets/card4.png";
 import card5 from "@/assets/card5.png";
 import card6 from "@/assets/card6.png";
 import Hero2 from "@/assets/hero2.png";
+import artical from "@/assets/artical.png";
 function Cyber() {
   return (
     <div>
@@ -208,9 +209,9 @@ function Cyber() {
                 </div>
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    <p className="text-[18px] text-black font-bold">
+                    <span className="text-[18px] text-black font-bold">
                       Manage Endpoint Security
-                    </p>
+                    </span>
                     Protect devices from <br /> emerging cyber threats with{" "}
                     <br /> our comprehensive endpoint
                     <br /> security management <br /> proactive protection.
@@ -223,9 +224,9 @@ function Cyber() {
                 </div>
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    <p className="text-[18px] text-black font-bold">
+                    <span className="text-[18px] text-black font-bold">
                       IT Audit & Compliance
-                    </p>
+                    </span>
                     Achieve regulatory <br /> compliance and minimize <br /> our
                     risks through IT audits and <br /> expert guidance for{" "}
                     <br /> enhanced security.
@@ -238,9 +239,9 @@ function Cyber() {
                 </div>
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    <p className="text-[18px] text-black font-bold">
+                    <span className="text-[18px] text-black font-bold">
                       Manage Endpoint Security
-                    </p>
+                    </span>
                     Take control of endpoint <br /> security with our
                     streamlined <br /> management solutions, <br /> ensuring
                     proactive protection <br /> against cyber threats.
@@ -253,9 +254,9 @@ function Cyber() {
                 </div>
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    <p className="text-[18px] text-black font-bold">
+                    <span className="text-[18px] text-black font-bold">
                       Infrastructure Security
-                    </p>
+                    </span>
                     Fortify your infrastructure <br /> with robust security,{" "}
                     <br /> defending against threats <br /> and safeguarding
                     system <br /> integrity.
@@ -268,9 +269,9 @@ function Cyber() {
                 </div>
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    <p className="text-[18px] text-black font-bold">
+                    <span className="text-[18px] text-black font-bold">
                       Applications Security
-                    </p>
+                    </span>
                     Secure applications with <br /> comprehensive solutions,{" "}
                     <br /> ensuring integrity and <br /> protection of software{" "}
                     <br /> assets.
@@ -283,9 +284,9 @@ function Cyber() {
                 </div>
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
-                    <p className="text-[18px] text-black font-bold">
+                    <span className="text-[18px] text-black font-bold">
                       cloud security
-                    </p>
+                    </span>
                     Safeguard cloud <br /> infrastructure with <br /> advanced
                     security <br /> measures for safety and <br /> resilience
                   </p>
@@ -296,6 +297,7 @@ function Cyber() {
           </div>
         </section>
         {/* five section end  */}
+        {/* six section start  */}
         <section className="py-36">
           <hr className=" bg-gray-300 h-1" />
           <div className="flex px-8 py-16">
@@ -318,6 +320,70 @@ function Cyber() {
           </div>
           <hr className=" bg-gray-300 h-1" />
         </section>
+        {/* six section end  */}
+        {/* seven section start  */}
+        <section className="px-16">
+          <div className="flex">
+            <div className="w-1/2">
+              <h1 className="text-[50px] font-bold">
+                Read <span className="text-[#FFD01F]">Our</span> <br /> News &{" "}
+                <span className="text-[#FFD01F]">Articles</span>
+              </h1>
+              <p className="text-[30px]">
+                Stay up-to-date with the <br /> latest trends and insights{" "}
+                <br /> in cybersecurity by <br /> exploring our informative{" "}
+                <br /> news and articles section.
+              </p>
+            </div>
+            <div className="w-1/2 mx-auto md:grid grid-cols-2 gap-5 ">
+              <div className="shadow-xl h-[550px] my-4 rounded-[25px] border-x-1 hover:scale-105 duration-[400ms]">
+                <div className="flex items-center">
+                  <Image src={artical} alt="-" />
+                </div>
+                <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-6">
+                  <span className=" text-black font-bold">
+                    Encryption Vulnerability <br /> Using MD5 and Plain Text{" "}
+                    <br />
+                    <span className="text-[#FFD01F]">
+                      January 8, 2022 <br />
+                    </span>
+                    252 Comments <br />
+                  </span>
+                  Discover the dangers of <br /> using MD5 encryption <br /> and
+                  plain text, and learn
+                  <br /> why robust encryption <br /> methods are crucial for{" "}
+                  <br />
+                  security
+                  <br />
+                  <span className="text-[#FFD01F] font-bold">Read More</span>
+                </p>
+              </div>
+              <div className="shadow-xl h-[550px] my-4 rounded-[25px] border-x-1 hover:scale-105 duration-[400ms]">
+                <div className="flex items-center">
+                  <Image src={artical} alt="-" />
+                </div>
+                <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-6">
+                  <span className=" text-black font-bold">
+                    Encryption Vulnerability <br /> Using MD5 and Plain Text{" "}
+                    <br />
+                    <span className="text-[#FFD01F]">
+                      January 8, 2022 <br />
+                    </span>
+                    252 Comments <br />
+                  </span>
+                  Discover the dangers of <br /> using MD5 encryption <br /> and
+                  plain text, and learn
+                  <br /> why robust encryption <br /> methods are crucial for{" "}
+                  <br />
+                  security
+                  <br />
+                  <span className="text-[#FFD01F] font-bold">Read More</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* seven section end  */}
         {/* eight section start */}
         <section className="px-36 py-10 overflow-hidden lg:h-[90vh]  relative  bg-[#F1F1F1]">
           <Image src={DS} alt="=" className="absolute left-0 top-0" />
