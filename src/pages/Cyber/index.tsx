@@ -210,7 +210,7 @@ function Cyber() {
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
                     <span className="text-[18px] text-black font-bold">
-                      Manage Endpoint Security
+                      Manage Endpoint Security <br />
                     </span>
                     Protect devices from <br /> emerging cyber threats with{" "}
                     <br /> our comprehensive endpoint
@@ -225,7 +225,7 @@ function Cyber() {
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
                     <span className="text-[18px] text-black font-bold">
-                      IT Audit & Compliance
+                      IT Audit & Compliance <br />
                     </span>
                     Achieve regulatory <br /> compliance and minimize <br /> our
                     risks through IT audits and <br /> expert guidance for{" "}
@@ -240,7 +240,7 @@ function Cyber() {
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
                     <span className="text-[18px] text-black font-bold">
-                      Manage Endpoint Security
+                      Manage Endpoint Security <br />
                     </span>
                     Take control of endpoint <br /> security with our
                     streamlined <br /> management solutions, <br /> ensuring
@@ -255,7 +255,7 @@ function Cyber() {
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
                     <span className="text-[18px] text-black font-bold">
-                      Infrastructure Security
+                      Infrastructure Security <br />
                     </span>
                     Fortify your infrastructure <br /> with robust security,{" "}
                     <br /> defending against threats <br /> and safeguarding
@@ -270,7 +270,7 @@ function Cyber() {
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
                     <span className="text-[18px] text-black font-bold">
-                      Applications Security
+                      Applications Security <br />
                     </span>
                     Secure applications with <br /> comprehensive solutions,{" "}
                     <br /> ensuring integrity and <br /> protection of software{" "}
@@ -285,7 +285,7 @@ function Cyber() {
                 <div className="text-center ">
                   <p className="text-[18px] text-[rgba(0,0,0,0.5)] text-left px-11">
                     <span className="text-[18px] text-black font-bold">
-                      cloud security
+                      cloud security <br />
                     </span>
                     Safeguard cloud <br /> infrastructure with <br /> advanced
                     security <br /> measures for safety and <br /> resilience
@@ -383,6 +383,7 @@ function Cyber() {
             </div>
           </div>
         </section>
+        <hr className=" bg-gray-300 h-1 my-10" />
         {/* seven section end  */}
         {/* eight section start */}
         <section className="px-36 py-10 overflow-hidden lg:h-[90vh]  relative  bg-[#F1F1F1]">
