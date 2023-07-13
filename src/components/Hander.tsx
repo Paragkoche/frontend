@@ -42,7 +42,9 @@ export default () => {
           <li>
             <Link href="/about">About</Link>
           </li>
-          <li>Contact</li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
           <li>Blogs</li>
         </ul>
         <div className="flex gap-2">
