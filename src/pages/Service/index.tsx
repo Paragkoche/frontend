@@ -21,7 +21,7 @@ const Services = () => {
       <Hander />
       <main className="lg:w-full">
         {/* first section  start*/}
-        <section className="lg:px-36 overflow-hidden relative mb-10 lg:mb-20 lg:flex items-center ">
+        <section className="lg:px-36 px-10 overflow-hidden relative mb-10 lg:mb-20 lg:flex items-center ">
           <div className="flex flex-col">
             <h1 className=" font-bold text-[60px] lg:leading-[100px]">
               Grow Your Business With <br />
@@ -144,10 +144,10 @@ const Services = () => {
           max-[1024px]:px-10 max-[768px]:px-12  max-md:px-5
           max-[1024px]:py-10 
           max-[1024px]:p-10 
-          max-[768px]:py-10 
+          max-[768px]:py-10
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5 px-36 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5 lg:px-36 px-20 py-4 relative mb-20 overflow-hidden"
         >
           <div
             className=" border-[#c5c5c4]
@@ -155,7 +155,7 @@ const Services = () => {
             border-x-[1px]
            overflow-hidden 
            lg:h-[35rem] 
-           h-[70vh]
+           h-auto
            rounded-b-[5rem]  
            flex 
            items-center 
@@ -193,7 +193,7 @@ const Services = () => {
           max-[768px]:py-10 
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5  px-36 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5  lg:px-36 px-20 py-4 relative mb-20 overflow-hidden"
         >
           <div
             className=" border-[#c5c5c4]
@@ -201,7 +201,8 @@ const Services = () => {
             border-x-[1px]
            overflow-hidden 
            lg:h-[35rem] 
-           h-[80vh]
+           h-auto
+           py-10
            rounded-b-[5rem]  
            lg:flex 
            items-center 
@@ -247,7 +248,7 @@ const Services = () => {
           max-[768px]:py-10 
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5  px-36 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5  lg:px-36 px-20 py-4 relative mb-20 overflow-hidden"
         >
           <div
             className=" border-[#c5c5c4]
@@ -255,7 +256,8 @@ const Services = () => {
             border-x-[1px]
            overflow-hidden 
            lg:h-[35rem] 
-           h-[80vh]
+           h-auto
+           py-10
            rounded-b-[5rem]  
            flex 
            items-center 
@@ -292,7 +294,7 @@ const Services = () => {
           max-[768px]:py-10 
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5  px-36 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5  lg:px-36 px-20 py-4 relative mb-20 overflow-hidden"
         >
           <div
             className=" border-[#c5c5c4]
@@ -300,19 +302,20 @@ const Services = () => {
             border-x-[1px]
            overflow-hidden 
            lg:h-[35rem] 
-           h-[70vh]
+           h-auto
            rounded-b-[5rem]  
            lg:flex 
            items-center 
            justify-center 
-           gap-10"
+           gap-10
+           py-10"
           >
-            <div className="lg:w-1/2 px-10 flex items-center ">
+            <div className="lg:w-1/2 lg:px-10 flex items-center ">
               <div className="flex flex-col">
                 <Image className="lg:mx-1 my-8 lg:mb-10" src={chip} alt="-" />
                 <Image src={tool} alt="-" />
               </div>
-              <Image className="mx-4" src={Service5} alt="-" />
+              <Image className="lg:mx-4" src={Service5} alt="-" />
             </div>
             <div className="lg:w-1/2 flex items-center justify-center relative">
               <div className="">
