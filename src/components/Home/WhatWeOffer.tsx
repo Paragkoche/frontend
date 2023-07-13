@@ -7,6 +7,91 @@ const WhatWeOffer = () => {
       className="
        w-full px-96 md:px-5 sm:px-5 py-4 relative mb-20 overflow-hidden"
     >
+      <div className="absolute left-2  -top-[25rem]">
+        <svg
+          width="760"
+          height="1443"
+          viewBox="0 0 760 1443"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_f_1067_2324)">
+            <ellipse
+              cy="721.5"
+              rx="260"
+              ry="221.5"
+              fill="#FFD123"
+              fill-opacity="0.6"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_1067_2324"
+              x="-760"
+              y="0"
+              width="1520"
+              height="1443"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="250"
+                result="effect1_foregroundBlur_1067_2324"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div className="absolute -right-2  -bottom-[25rem]">
+        <svg
+          width="840"
+          height="1443"
+          viewBox="0 0 840 1443"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_f_1067_2325)">
+            <ellipse
+              cx="760"
+              cy="721.5"
+              rx="260"
+              ry="221.5"
+              fill="#FFD123"
+              fill-opacity="0.6"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_1067_2325"
+              x="0"
+              y="0"
+              width="1520"
+              height="1443"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="250"
+                result="effect1_foregroundBlur_1067_2325"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
       <h1 className="text-center  text-5xl font-bold ">
         What We{" "}
         <span

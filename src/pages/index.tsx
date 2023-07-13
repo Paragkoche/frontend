@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Hander />
-      <main className="overflow-x-hidden">
+      <main className="">
         <Hero />
         <Serves />
         <WhatWeOffer />
