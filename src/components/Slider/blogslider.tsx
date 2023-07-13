@@ -5,6 +5,32 @@ import { Pagination, EffectCoverflow, Autoplay } from "swiper";
 const Homepage = () => {
   return (
     <Swiper
+      breakpoints={
+        {
+          320: {
+            slidesPerView: 1,
+
+          },
+          // when window width is <= 499px
+          499: {
+            slidesPerView: 1,
+
+          },
+          // when window width is <= 999px
+          999: {
+            slidesPerView: 2,
+
+          },
+          768: {
+            slidesPerView: 2,
+
+          },
+          2600: {
+            slidesPerView: 2,
+
+          }
+        }
+      }
       effect={"coverflow"}
       grabCursor={true}
       slidesPerView={3}

@@ -14,140 +14,150 @@ export default () => {
   return (
     <footer
       className="
-    max-[1024px]:px-20 max-[768px]:px-12 max-sm:px-5 max-md:px-5
-    px-36 py-20 bg-black w-full "
+    max-[1024px]:px-20 
+    px-36 sm:px-5 md:px-20 py-20 bg-black w-full flex md:justify-center"
     >
       <div className="flex flex-col flex-wrap gap-20 w-full">
         <div
           className="flex 
-        max-[1024px]:flex-col max-[768px]:flex-col max-sm:flex-col max-md:flex-col 
-        max-[1024px]:gap-20 max-[768px]:gap-20 max-sm:gap-20 max-md:gap-20 
-        text-[#FFD01F] justify-between
+        max-[1024px]:flex-col 
+        max-[1024px]:gap-20 
+        sm:flex-col
+        sm:gap-10
+       md:flex-col
+      
+
+md:gap-10       text-[#FFD01F] justify-between 
         w-full
         "
         >
-          <div className="flex flex-col gap-3">
-            <h1 className="underline text-3xl ">Services</h1>
-            <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F] ">
-              <li>
-                <i className="text-xl mr-3">-</i>
-                Performance Marketing
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>
-                360 Marketing
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>
-                Digital marketing{" "}
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>
-                Mobile App Development
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>
-                Web Development
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>
-                Seo (search engine optimization)
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>
-                Ai automation{" "}
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>
-                ADV Camping{" "}
-              </li>
-            </ul>
+          <div className="md:flex flex gap-20 md:gap-[5em] sm:flex-col">
+            <div className="flex flex-col gap-3">
+              <h1 className="underline text-3xl ">Services</h1>
+              <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F] ">
+                <li>
+                  <i className="text-xl mr-3">-</i>
+                  Performance Marketing
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>
+                  360 Marketing
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>
+                  Digital marketing{" "}
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>
+                  Mobile App Development
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>
+                  Web Development
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>
+                  Seo (search engine optimization)
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>
+                  Ai automation{" "}
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>
+                  ADV Camping{" "}
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-3">
+              <h1 className="underline text-3xl ">DIGITAL TRANSFORMATION </h1>
+              <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F]">
+                <li>
+                  {" "}
+                  <i className="text-xl mr-3">-</i>Saas Platforms
+                </li>
+                <li>
+                  {" "}
+                  <i className="text-xl mr-3">-</i>Paas Platforms
+                </li>
+                <li>
+                  {" "}
+                  <i className="text-xl mr-3">-</i>Al Development
+                </li>
+                <li>
+                  {" "}
+                  <i className="text-xl mr-3">-</i>ML Development
+                </li>
+                <li>
+                  {" "}
+                  <i className="text-xl mr-3">-</i>Digital Product Development
+                </li>
+                <li>
+                  {" "}
+                  <i className="text-xl mr-3">-</i>Cyber Security Services{" "}
+                </li>
+                <li>
+                  {" "}
+                  <i className="text-xl mr-3">-</i>Healthcare Portal Development
+                </li>
+                <li>
+                  {" "}
+                  <i className="text-xl mr-3">-</i>Progressive Web App
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="flex flex-col gap-3">
-            <h1 className="underline text-3xl ">DIGITAL TRANSFORMATION </h1>
-            <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F]">
-              <li>
-                {" "}
-                <i className="text-xl mr-3">-</i>Saas Platforms
-              </li>
-              <li>
-                {" "}
-                <i className="text-xl mr-3">-</i>Paas Platforms
-              </li>
-              <li>
-                {" "}
-                <i className="text-xl mr-3">-</i>Al Development
-              </li>
-              <li>
-                {" "}
-                <i className="text-xl mr-3">-</i>ML Development
-              </li>
-              <li>
-                {" "}
-                <i className="text-xl mr-3">-</i>Digital Product Development
-              </li>
-              <li>
-                {" "}
-                <i className="text-xl mr-3">-</i>Cyber Security Services{" "}
-              </li>
-              <li>
-                {" "}
-                <i className="text-xl mr-3">-</i>Healthcare Portal Development
-              </li>
-              <li>
-                {" "}
-                <i className="text-xl mr-3">-</i>Progressive Web App
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-3">
-            <h1 className="underline text-3xl ">USEFUL LINKS </h1>
-            <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F]">
-              <li>
-                <i className="text-xl mr-3">-</i>Contact US{" "}
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>About Us{" "}
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>Blogs{" "}
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>Testimonials{" "}
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>Assets{" "}
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>Services{" "}
-              </li>
-              <li>
-                <i className="text-xl mr-3">-</i>Medium{" "}
-              </li>
-            </ul>
-          </div>
-          <div
-            className="
+          <div className="flex sm:flex-col gap-14 md:gap-[5em]">
+
+            <div className="flex flex-col gap-3">
+              <h1 className="underline text-3xl ">USEFUL LINKS </h1>
+              <ul className="flex flex-col gap-1 border-l-2 border-[#FFD01F]">
+                <li>
+                  <i className="text-xl mr-3">-</i>Contact US{" "}
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>About Us{" "}
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>Blogs{" "}
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>Testimonials{" "}
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>Assets{" "}
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>Services{" "}
+                </li>
+                <li>
+                  <i className="text-xl mr-3">-</i>Medium{" "}
+                </li>
+              </ul>
+            </div>
+            <div
+              className="
              max-[1024px]:w-full max-[768px]:w-full max-sm:w-full max-md:w-full 
              max-[1024px]:gap-3 max-[768px]:gap-3 max-sm:gap-3 max-md:gap-3 
              
           flex flex-col items-center gap-3"
-          >
-            <Image src={imag} alt="-" />
-            <button
-              className={
-                "py-5  overflow-hidden flex items-center justify-center text-white font-bold bg-[#FFD01F] rounded-xl relative px-24  max-[1024px]:w-full max-[768px]:w-full max-sm:w-full max-md:w-full "
-              }
             >
-              <a className={`${classes.animion}   `}>Contact US</a>
-            </button>
+              <Image src={imag} alt="-" />
+              <button
+                className={
+                  "py-5  overflow-hidden flex items-center justify-center text-white font-bold bg-[#FFD01F] rounded-xl relative px-24  max-[1024px]:w-full max-[768px]:w-full max-sm:w-full max-md:w-full "
+                }
+              >
+                <a className={`${classes.animion}   `}>Contact US</a>
+              </button>
+            </div>
           </div>
         </div>
         <div
           className="
           gap-4
            w-full
-        flex justify-between flex-wrap"
+        flex justify-between md:justify-center flex-wrap"
         >
           <div className="flex flex-wrap  items-center gap-5">
             <Logo />

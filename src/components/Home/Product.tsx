@@ -9,31 +9,43 @@ const Product = () => {
   return (
     <section
       className="
-  max-[1024px]:flex-col max-[768px]:flex-col max-sm:flex-col max-md:flex-col
-max-[1024px]:px-20 max-[768px]:px-12 max-sm:px-5 max-md:px-5
-py-[4rem] mt-20 relative mb-20 px-52 flex gap-10 justify-center items-end"
+      sm:py-20
+      sm:mt-20
+      sm:mb-0
+      sm:px-5
+      md:py-20
+      md:mt-60
+      md:mb-0
+      md:px-20
+sm:flex 
+sm:flex-col
+sm:w-full
+md:flex 
+md:flex-col
+md:w-full
+
+ max-[1024px]:px-20  
+py-[4rem] mt-20 relative mb-20 px-52 flex gap-10 justify-center items-end "
     >
       <Image
         src={prod}
         width={800}
         alt="-"
         className="
-   
+  
+   sm:-top-[12%]
+   sm:-left-[15%]
+  sm:flex
+  sm:justify-start
+  sm:w-full
+  md:-top-[27%]
+   md:-left-[10%]
+  md:flex
+  md:justify-start
+  md:w-[650px]
     max-[1024px]:-top-[20%]
     max-[1024px]:left-[25%]
     max-[1024px]:w-[500px]
-
-    max-[768px]:-top-[20%]
-    max-[768px]:left-[25%]
-    max-[768px]:w-[500px]
-
-    max-sm:-top-[20%]
-    max-sm:left-[25%]
-    max-sm:w-[500px]
-
-    max-md:-top-[20%]
-    max-md:left-[25%]
-    max-md:w-[500px]
     absolute z-10 bottom-[0.5rem] left-0 "
       />{" "}
       <div
@@ -41,8 +53,8 @@ py-[4rem] mt-20 relative mb-20 px-52 flex gap-10 justify-center items-end"
           boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
         }}
         className="
-    max-[1024px]:w-full max-[768px]:w-full max-sm:w-full max-md:w-full
-    bg-[#FFD01F] overflow-hidden  flex w-1/2 h-[40vh]  relative justify-between gap-32 p-16 rounded-3xl"
+    max-[1024px]:w-full sm:w-full md:w-full sm:flex sm:justify-end sm:items-center sm:p-5
+    bg-[#FFD01F] overflow-hidden  flex w-1/2 h-[40vh] md:h-[55vh] sm:h-[30vh] relative justify-between gap-32 p-16 rounded-3xl"
       >
         <div className={`${classes.animion_1}`}>
           <div
@@ -50,12 +62,12 @@ py-[4rem] mt-20 relative mb-20 px-52 flex gap-10 justify-center items-end"
               textShadow:
                 "0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}
-            className="text-6xl relative z-10 ml-[20rem] font-bold text-center flex flex-col items-center"
+            className="text-6xl sm:text-xl md:text-[em] relative z-10 ml-[20rem] sm:ml-[0rem] font-bold text-center flex flex-col items-center"
           >
             Upcoming <br />
-            <p className="text-9xl flex items-start">
+            <p className="text-9xl sm:text-xl md:text-[1em] flex items-start">
               <CountUp isCounting end={10} duration={5} />
-              <samp className="text-6xl">+</samp>
+              <samp className="text-6xl sm:text-xl md:text-4xl">+</samp>
             </p>
             PRODUCT
           </div>
@@ -66,21 +78,21 @@ py-[4rem] mt-20 relative mb-20 px-52 flex gap-10 justify-center items-end"
           boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
         }}
         className="
-    max-[1024px]:w-full max-[768px]:w-full max-sm:w-full max-md:w-full
-    relative overflow-hidden p-5 h-[60vh] flex flex-col items-center w-1/2 bg-[#D9D9D9] rounded-3xl"
+    max-[1024px]:w-full sm:w-full md:w-full md:h-[95vh]
+    relative overflow-hidden p-5 h-[60vh] sm:h-[55vh] flex flex-col items-center w-1/2 bg-[#D9D9D9] rounded-3xl"
       >
         <div className={`${classes.animion_2} `}>
-          <div className="flex gap-5 items-center my-4 relative z-10">
+          <div className="flex gap-5 sm:gap-4  items-center my-4 relative z-10">
             {[c, P, s, P].map((v, i) => (
-              <div className="flex items-center justify-center rounded-full bg-[#F5F5F7] w-40 h-40">
-                <Image width={60} src={v} alt="-" />
+              <div className="flex items-center justify-center rounded-full bg-[#F5F5F7] sm:w-[5em] sm:h-[5em] md:w-[11em] md:h-[11em] w-40 h-40">
+                <Image width={60} src={v} alt="-" className="sm:w-[20px] md:w-[50px]" />
               </div>
             ))}
           </div>
-          <div className="flex gap-5 items-center my-4 pl-[6rem]  relative z-10">
+          <div className="flex gap-5 sm:gap-1 md:gap-7 items-center my-4 pl-[6rem]  relative z-10">
             {[P, c, P, s].map((v, i) => (
-              <div className=" flex items-center justify-center rounded-full bg-[#F5F5F7]  w-40 h-40">
-                <Image width={60} src={v} alt="-" />
+              <div className=" flex items-center justify-center rounded-full bg-[#F5F5F7] sm:w-[5em] sm:h-[5em] md:w-[11em] md:h-[11em] w-40 h-40">
+                <Image width={60} src={v} alt="-" className="sm:w-[20px] md:w-[50px]" />
               </div>
             ))}
           </div>

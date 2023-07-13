@@ -5,18 +5,12 @@ const WhatWeOffer = () => {
   return (
     <section
       className="
-        max-[1024px]:px-20 max-[768px]:px-12  max-md:px-5
-          max-[1024px]:py-20 
-          max-[1024px]:p-10 
-          max-[768px]:py-10 
-          max-[768px]:p-10 
-          max-sm:px-5 
-          max-sm:p-5  px-96 py-4 relative mb-20 overflow-hidden"
+       w-full px-96 md:px-5 sm:px-5 py-4 relative mb-20 overflow-hidden"
     >
-      <h1 className="text-center text-5xl font-bold">
+      <h1 className="text-center  text-5xl font-bold ">
         What We{" "}
         <span
-          className="text-[#FFD01F] p-2 rounded-3xl"
+          className="text-[#FFD01F] p-2  rounded-3xl"
           style={{
             boxShadow: "inset 0px 4px 4px rgba(0, 0, 0, 0.25);",
           }}
@@ -30,8 +24,8 @@ const WhatWeOffer = () => {
         <br /> Growth
       </p>
       <div className=" my-20">
-        <div className="w-1/2 flex flex-col gap-4">
-          <h1 className="text-[#001F51] text-4xl font-bold">
+        <div className="w-1/2 sm:w-full flex flex-col gap-4">
+          <h1 className="text-[#001F51] text-4xl font-bold sm:text-center ">
             Accelerate Your Business Growth at Junction
           </h1>
           <p className="text-[#5C5C5C]">
@@ -39,8 +33,8 @@ const WhatWeOffer = () => {
             and expertise propel your success in the competitive market.
           </p>
         </div>
-        <div className="flex w-full items-center justify-between">
-          <ul className="w-1/2">
+        <div className="flex w-full sm:flex-col items-center justify-between">
+          <ul className="w-1/2 sm:w-full">
             <li className="li">
               <div>
                 <h1 className="text-lg font-bold mb-2">Web Development </h1>
@@ -69,7 +63,7 @@ const WhatWeOffer = () => {
               </p>
             </li>
           </ul>
-          <div className="w-1/2 flex items-center justify-center relative">
+          <div className="w-1/2 sm:w-full flex items-center justify-center relative">
             <Image src={SVG} alt="-" />
             <div className="p-5 bg-white rounded-full absolute top-10">
               <Image src={Computer} alt="=" />
@@ -82,20 +76,20 @@ const WhatWeOffer = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full items-center justify-between">
-          <div className="w-1/2 flex items-center justify-center relative">
+        <div className="flex flex-col-reverse w-full items-center justify-between sm:pt-9">
+          <div className="w-1/2 sm:w-full flex items-center justify-center relative">
             <Image src={SVG} alt="-" />
-            <div className="p-5 bg-white rounded-full absolute circle ">
+            <div className="p-5  bg-white rounded-full absolute circle ">
               <Image src={Computer} alt="=" />
             </div>
-            <div className="p-5 bg-white rounded-full absolute circle2 ">
+            <div className="p-5  bg-white rounded-full absolute circle2 ">
               <Image src={Computer} alt="=" />
             </div>
             <div className="p-5 bg-white rounded-full absolute circle3">
               <Image src={Computer} alt="=" />
             </div>
           </div>
-          <ul className="w-1/2">
+          <ul className="w-1/2 sm:w-full sm:pb-20">
             <li className="li">
               <div>
                 <h1 className="text-lg font-bold mb-2">Business Development</h1>

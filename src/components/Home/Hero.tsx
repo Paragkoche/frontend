@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <section
       className="
-        max-[1024px]:px-20 max-[768px]:px-12 max-sm:px-5 max-md:px-5
-      px-36 py-16 relative mb-20"
+      w-full sm:w-full 
+     px-36 sm:px-5 md:px-20 py-16 relative mb-20"
     >
       <div
         style={{
@@ -16,6 +16,10 @@ const Hero = () => {
            border-[3px] 
            overflow-hidden 
            h-[45rem] 
+           sm:h-[10rem]
+           md:h-[21rem]
+           md:rounded-[3rem]
+           sm:rounded-[3rem]  
            rounded-[5rem]  
            flex 
            items-center 
@@ -38,7 +42,7 @@ const Hero = () => {
         className="
       
    
-      bg-black h-20 w-20 absolute bottom-5 right-0 left-0 mx-auto rounded-full flex justify-center items-center p-3"
+      bg-black h-20 w-20 sm:h-10 sm:w-10 md:h-[3em] md:w-[3em] absolute sm:bottom-10 md:bottom-8 bottom-5 right-0 left-0 mx-auto rounded-full flex justify-center items-center p-3"
       >
         <Image src={d} alt="s" />
       </div>

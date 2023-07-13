@@ -17,6 +17,47 @@ import Image from "next/image";
 const Homepage = () => {
   return (
     <Swiper
+      breakpoints={
+        {
+          320: {
+            slidesPerView: 1,
+
+          },
+
+          // when window width is <= 499px
+          499: {
+            slidesPerView: 1,
+
+          },
+          768: {
+            slidesPerView: 3,
+
+          },
+          // when window width is <= 999px
+          999: {
+            slidesPerView: 2,
+
+          },
+          2560: {
+            slidesPerView: 5,
+
+          },
+          1024: {
+            slidesPerView: 5,
+
+          },
+
+          1440: {
+            slidesPerView: 5,
+
+          },
+          2600: {
+            slidesPerView: 5,
+
+          }
+        }
+      }
+
       slidesPerView={5}
       spaceBetween={50}
       pagination={{

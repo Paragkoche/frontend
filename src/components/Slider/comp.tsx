@@ -10,6 +10,47 @@ import { Pagination, EffectCoverflow, Autoplay } from "swiper";
 const Homepage = () => {
   return (
     <Swiper
+      breakpoints={
+        {
+          320: {
+            slidesPerView: 1,
+
+          },
+
+          // when window width is <= 499px
+          499: {
+            slidesPerView: 1,
+
+          },
+          768: {
+            slidesPerView: 1,
+
+          },
+          // when window width is <= 999px
+          999: {
+            slidesPerView: 2,
+
+          },
+          2560: {
+            slidesPerView: 2,
+
+          },
+          1024: {
+            slidesPerView: 2,
+
+          },
+
+          1440: {
+            slidesPerView: 2,
+
+          },
+          2600: {
+            slidesPerView: 2,
+
+          }
+        }
+      }
+
       slidesPerView={2}
       spaceBetween={50}
       pagination={{
