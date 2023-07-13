@@ -4,7 +4,6 @@ import Conta from "@/assets/cale.svg";
 import PPC from "@/assets/ppcont.svg";
 import Image from "next/image";
 import B from "@/assets/b.svg";
-import { classes } from '@/components/Hander.module.css';
 const Happiness = () => {
   return (
     <section className="py-4 relative mb-20 px-52  md:px-20 sm:px-5">
@@ -38,10 +37,11 @@ const Happiness = () => {
               </div>
               <div className="sm:text-xl md:text-4xl">
                 <CountUp isCounting end={91} duration={5} />+
-
               </div>
             </div>
-            <h1 className="font-bold text-4xl mt-5 text-center md:text-3xl sm:text-xl">Clients</h1>
+            <h1 className="font-bold text-4xl mt-5 text-center md:text-3xl sm:text-xl">
+              Clients
+            </h1>
           </div>
           <div className="flex flex-col items-center mt-52 md:mt-[16em]">
             <div
@@ -60,7 +60,6 @@ const Happiness = () => {
               </div>
               <div className="sm:text-xl md:text-4xl">
                 <CountUp isCounting end={96} duration={5} />%
-
               </div>
             </div>
             <h1 className="font-bold text-4xl md:text-3xl mt-5 sm:text-xl text-center ">
@@ -84,7 +83,6 @@ const Happiness = () => {
               </div>
               <div className="sm:text-xl md:text-4xl">
                 <CountUp isCounting end={5} duration={5} />+{" "}
-
               </div>
             </div>
             <h1 className="font-bold text-4xl md:text-3xl mt-5 sm:text-xl text-center">
