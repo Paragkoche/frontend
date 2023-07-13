@@ -24,7 +24,7 @@ function Cyber() {
         {/* first section  start*/}
         <section className="lg:px-36 overflow-hidden py-4 lg:my-[100px] relative mb-20 flex items-center ">
           <div className="flex flex-col">
-            <h1 className="font-bold lg:text-[60px] md:text-[50px] lg:leading-[112px]">
+            <h1 className="font-bold lg:text-[60px] text-[50px] lg:leading-[112px]">
               We Can Collaborate <br /> With You
               <span className="text-[rgba(0,0,0,0.5)]">
                 {" "}
