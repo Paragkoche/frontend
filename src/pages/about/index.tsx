@@ -26,8 +26,6 @@ const About = () => {
               </span>
             </h1>
             <div className="sm:flex sm:justify-center">
-
-
               <button
                 className={
                   "p-3 overflow-hidden flex  items-center text-white font-bold bg-[#FFD01F] rounded-xl relative w-52 mt-10 "
@@ -99,7 +97,6 @@ const About = () => {
           <div className="bg-[rgba(255,208,31,0.8)] w-[35vw] sm:w-full h-[100%]  sm:p-5 flex flex-col justify-center items-center rounded-r-3xl  ">
             <div>
               <Image src={DrDP} alt="=" />
-
             </div>
 
             <h1 className="font-bold text-3xl py-5 ">Dr. D.P Kothari</h1>

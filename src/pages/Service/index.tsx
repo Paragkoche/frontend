@@ -97,7 +97,7 @@ const Services = () => {
           max-[768px]:py-10 
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5  px-36 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5  lg:px-36 py-4 relative mb-20 overflow-hidden"
         >
           <h1 className=" text-5xl font-bold">
             Unleashing <br /> Your Business Potential <br /> Our Dynamic
@@ -147,7 +147,7 @@ const Services = () => {
           max-[768px]:py-10
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5 lg:px-36 px-20 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5 lg:px-36 md:px-20 px-3 py-4 relative mb-20 overflow-hidden"
         >
           <div
             className=" border-[#c5c5c4]
@@ -193,7 +193,7 @@ const Services = () => {
           max-[768px]:py-10 
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5  lg:px-36 px-20 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5  lg:px-36 md:px-20 px-3 py-4 relative mb-20 overflow-hidden"
         >
           <div
             className=" border-[#c5c5c4]
@@ -248,7 +248,7 @@ const Services = () => {
           max-[768px]:py-10 
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5  lg:px-36 px-20 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5  lg:px-36 md:px-20 px-3 py-4 relative mb-20 overflow-hidden"
         >
           <div
             className=" border-[#c5c5c4]
@@ -294,7 +294,7 @@ const Services = () => {
           max-[768px]:py-10 
           max-[768px]:p-10 
           max-sm:px-5 
-          max-sm:p-5  lg:px-36 px-20 py-4 relative mb-20 overflow-hidden"
+          max-sm:p-5  lg:px-36 md:px-20 px-3 py-4 relative mb-20 overflow-hidden"
         >
           <div
             className=" border-[#c5c5c4]

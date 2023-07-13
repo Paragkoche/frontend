@@ -2,7 +2,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, EffectCoverflow, Autoplay } from "swiper";
+import { useEffect, useState } from "react";
+import axios from "axios";
 const Homepage = () => {
+  const [blogs, setBlogs] = useState<
+    {
+      id: string;
+      created_at: string;
+      title: string;
+      para: string;
+      image: string;
+    }[]
+  >([]);
+  useEffect(() => {
+    axios.get("/api/blog").then(({ data }) => {
+      setBlogs(data);
+    });
+  }, []);
   return (
     <Swiper
       breakpoints={
@@ -50,39 +66,18 @@ const Homepage = () => {
       modules={[EffectCoverflow, Pagination, Autoplay]}
       className="mySwiper"
     >
-      {[
-        {
-          h: "Revamp Your Social Media Strategy with AI:",
-          p: `As a business owner or marketer, you know that having 
-          a strong online presence is crucial in today’s digital age. And social media marketing can be a powerful tool to help you achieve that.......`,
-        },
-        {
-          h: "Revamp Your Social Media Strategy with AI:",
-          p: `As a business owner or marketer, you know that having 
-          a strong online presence is crucial in today’s digital age. And social media marketing can be a powerful tool to help you achieve that.......`,
-        },
-        {
-          h: "Revamp Your Social Media Strategy with AI:",
-          p: `As a business owner or marketer, you know that having 
-            a strong online presence is crucial in today’s digital age. And social media marketing can be a powerful tool to help you achieve that.......`,
-        },
-        {
-          h: "Revamp Your Social Media Strategy with AI:",
-          p: `As a business owner or marketer, you know that having 
-            a strong online presence is crucial in today’s digital age. And social media marketing can be a powerful tool to help you achieve that.......`,
-        },
-      ].map((v, i) => (
+      {blogs.map((v, i) => (
         <SwiperSlide>
           <div className="flex justify-center w-full my-10">
             <div className="max-w-sm rounded-3xl overflow-hidden shadow-lg">
               <img
                 className="w-full"
-                src="https://v1.tailwindcss.com/img/card-top.jpg"
+                src={v.image}
                 alt="Sunset in the mountains"
               />
               <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{v.h}</div>
-                <p className="text-gray-700 text-base">{v.p}</p>
+                <div className="font-bold text-xl mb-2">{v.title}</div>
+                <p className="text-gray-700 text-base">{v.para}</p>
               </div>
             </div>
           </div>
