@@ -11,7 +11,7 @@ export default () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <div className="max-w:[1240px] sm:px-4 px-36 md:px-4 py-6 mx-auto shadow-md sm:gap-5 flex items-center justify-between   ">
+      <div className="max-w:[1240px] sm:px-4 px-36 md:px-4 py-6 mx-auto shadow-md sm:gap-5 flex items-center justify-between z-[9999999999999] relative  ">
         <div className="font-sans tracking-widest ">
           <Link className="flex items-center gap-2" href="/">
             <Logo className="max-sm:w-[50px] " />

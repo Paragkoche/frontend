@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Hander />
-      <main className="">
+      <main>
         <Hero />
         <Serves />
         <WhatWeOffer />
