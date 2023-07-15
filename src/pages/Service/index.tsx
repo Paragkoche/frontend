@@ -19,11 +19,11 @@ const Services = () => {
   return (
     <>
       <Hander />
-      <main className="lg:w-full">
+      <main className="lg:w-full overflow-hidden">
         {/* first section  start*/}
-        <section className="lg:px-36 px-10 overflow-hidden relative mb-10 lg:mb-20 lg:flex items-center ">
-          <div className="flex flex-col">
-            <h1 className=" font-bold text-[60px] lg:leading-[100px]">
+        <section className="lg:px-36 px-10 w-full h-[75vh]  relative mb-10 lg:mb-20 lg:flex items-center ">
+          <div className=" relative z-20">
+            <h1 className=" font-bold text-8xl ">
               Grow Your Business With <br />
               <span className="text-[rgba(0,0,0,0.5)]">
                 {" "}
@@ -31,20 +31,14 @@ const Services = () => {
                 <br /> Technology
               </span>
             </h1>
-            <div className="lg:absolute lg:-z-20 lg:right-16 lg:bottom-16">
-              <Image
-                className="h-[300px] w-[500px]"
-                src={serviceHero}
-                alt="-"
-              />
-            </div>
+
             <button
               className={
-                "p-3 overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-xl relative w-52 mt-10 "
+                "p-5 overflow-hidden flex items-center text-white font-bold bg-[#FFD01F] rounded-xl relative  mt-10 "
               }
             >
               <a
-                className={`${classes.animion} flex w-full gap-2 justify-between`}
+                className={`${classes.animion} text-4xl flex w-full gap-2 justify-between`}
               >
                 Get Quote
                 <svg
@@ -85,7 +79,10 @@ const Services = () => {
               </a>
             </button>
           </div>
-          <div className="bg-[rgba(255,208,31,0.2)] w-[500px] h-[500px] blur-3xl border-[#FFD01F] absolute rounded-full -right-28"></div>
+          <div className="absolute right-20 bottom-4 z-20">
+            <Image className="h-[500px] w-[800px]" src={serviceHero} alt="-" />
+          </div>
+          <div className="bg-[rgba(255,208,31,0.2)] w-[1500px] h-[1500px] blur-[250px]  absolute rounded-full z-0 -right-[500px]"></div>
         </section>
         {/* first section  end*/}
         {/* second section  start*/}
